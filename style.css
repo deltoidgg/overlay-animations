@@ -1,0 +1,40 @@
+.container {
+    overflow: hidden;
+  }
+  
+.shape {
+    width: 335px;
+    height: 55px;
+    margin: 0 0 0 -20px;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
+    overflow: hidden;
+    position: relative;
+    
+    border-right: 10px solid;
+    -moz-border-image: -moz-linear-gradient(top, #ffcb00 0%, #af7d2c 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #ffcb00 0%, #af7d2c 100%);
+    border-image: linear-gradient(to bottom, #ffcb00 0%, #af7d2c 100%);
+    border-image-slice: 1;
+
+    animation-name: example;
+    animation-duration: 1s;  
+}
+
+.text {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;    
+    text-align: center;
+    color: #fff;
+    
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);    
+}
+
+@keyframes example {
+    0%   {width: 35px;}
+    100% {width: 335px;}
+  }
