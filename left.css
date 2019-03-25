@@ -1,0 +1,21 @@
+.shape {    
+    position: absolute;
+    right: 0;
+    margin-right: -10px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg); 
+
+    border-right: none;
+    border-left: 10px solid;
+}
+
+.type {    
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);    
+}
+
+.sponsor {
+    margin-right: -30px;
+}

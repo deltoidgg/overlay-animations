@@ -5,10 +5,7 @@
 .shape {
     width: 335px;
     height: 55px;
-    margin: 0 0 0 -20px;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
+    margin: 0px;
     background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
     overflow: hidden;
     position: relative;
@@ -19,22 +16,39 @@
     border-image: linear-gradient(to bottom, #ffcb00 0%, #af7d2c 100%);
     border-image-slice: 1;
 
-    animation-name: example;
+    animation-name: caster;
     animation-duration: 1s;  
 }
 
-.text {
+.type {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;    
-    text-align: center;
-    color: #fff;
+
+    display: flex;
     
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);    
+    width: 100%;
+    height: 100%; 
+
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
 }
 
-@keyframes example {
+.sponsor {
+    width: 735px;
+    height: 170px;
+    margin: 0px;
+    
+    animation-name: sponsor;
+    animation-duration: 1s;  
+}
+
+@keyframes caster {
     0%   {width: 35px;}
     100% {width: 335px;}
+  }
+
+@keyframes sponsor {
+    0%   {width: 35px;}
+    100% {width: 735px;}
   }
