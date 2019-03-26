@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
     myFunction(this);
   }
 };
-xhttp.open("GET", "scoreboard.xml", true);
+xhttp.open("GET", "./assets/scoreboard.xml", true);
 xhttp.send();
 
 function myFunction(xml) {
