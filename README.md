@@ -8,6 +8,10 @@ caster overlay: width 350, height 55
 
 logo overlay: width 770, height 170
 
+player overlay: width 500, height 45
+
+score overlay: width 175, height 75
+
 Tick the 'Refresh browser when scene becomes active' option to force animation load on scene switch.
 
 # Force Refresh

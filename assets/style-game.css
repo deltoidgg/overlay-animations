@@ -61,12 +61,13 @@
 
 .score {
     
-    width: 100px;
+    width: 125px;
     height: 75px;
     margin: 0px;
     
     animation-name: score;
     animation-duration: 1s;  
+    background: linear-gradient(rgba(72,72,72,0.9),rgba(35,35,35,0.9));
 }
 
 @keyframes caster {
@@ -94,7 +95,7 @@
     height: 75px;
   }
   100%   {
-    width: 100px;
+    width: 125px;
     height: 75px;
   }
 }
