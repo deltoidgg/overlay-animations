@@ -10,7 +10,7 @@ xhttp.send();
 function myFunction(xml) {
 var i;
 var xmlDoc = xml.responseXML;
-var text=["","","",""];
+var text=["","","","","",""];
 var x = xmlDoc.getElementsByTagName("scores");
 
 for (i = 0; i <x.length; i++) { 
@@ -18,6 +18,8 @@ for (i = 0; i <x.length; i++) {
   text[1] += x[i].getElementsByTagName("P2")[0].childNodes[0].nodeValue;
   text[2] += x[i].getElementsByTagName("label")[0].childNodes[0].nodeValue;
   text[3] += x[i].getElementsByTagName("misc")[0].childNodes[0].nodeValue;
+  text[4] += x[i].getElementsByTagName("scrP1")[0].childNodes[0].nodeValue;
+  text[5] += x[i].getElementsByTagName("scrP2")[0].childNodes[0].nodeValue;
   }
 
   window.onload = startInterval();

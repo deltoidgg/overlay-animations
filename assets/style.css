@@ -11,9 +11,9 @@
     position: relative;
     
     border-right: 10px solid;
-    -moz-border-image: -moz-linear-gradient(top, #ffcb00 0%, #af7d2c 100%);
-    -webkit-border-image: -webkit-linear-gradient(top, #ffcb00 0%, #af7d2c 100%);
-    border-image: linear-gradient(to bottom, #ffcb00 0%, #af7d2c 100%);
+    -moz-border-image: -moz-linear-gradient(top, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-border-image: -webkit-linear-gradient(top, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    border-image: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
     border-image-slice: 1;
 
     animation-name: caster;
