@@ -4,7 +4,7 @@ xhttp.onreadystatechange = function() {
     myFunction(this);
   }
 };
-xhttp.open("GET", "./assets/scoreboard.xml", true);
+xhttp.open("GET", "assets/scoreboard.xml", true);
 xhttp.send();
 
 function myFunction(xml) {
@@ -20,13 +20,6 @@ for (i = 0; i <x.length; i++) {
   text[3] += x[i].getElementsByTagName("misc")[0].childNodes[0].nodeValue;
   text[4] += x[i].getElementsByTagName("scrP1")[0].childNodes[0].nodeValue;
   text[5] += x[i].getElementsByTagName("scrP2")[0].childNodes[0].nodeValue;
-  }
-
-  window.onload = startInterval();
-
-  function startInterval()
-  {
-      setInterval("loadXMLDoc();", 500);
   }
 
 document.getElementById("text").innerHTML = text[n];
