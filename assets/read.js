@@ -11,6 +11,7 @@ xhttp.send();
 function myFunction(xml) {
 var i;
 var logo = "assets/uyu.png";
+var team = "UYU";
 var xmlDoc = xml.responseXML;
 var text=["","","","","",""];
 var x = xmlDoc.getElementsByTagName("scores");
@@ -24,5 +25,6 @@ for (i = 0; i <x.length; i++) {
   }
 
 document.getElementById("text").innerHTML = text[n];
+document.getElementById("team").innerHTML = team;
 document.getElementById("logo").src = logo;
 }
