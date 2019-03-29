@@ -55,6 +55,8 @@
   justify-content: center;
   align-items: center;
   color: #fff; 
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
 }
