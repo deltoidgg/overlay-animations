@@ -1,9 +1,8 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
-  // if (this.readyState == 4 && this.status == 200) {
-  //   myFunction(this);
-  // }
+  if (this.readyState == 4 && ((location.protocol.indexOf('http') >= 0 && this.status == 200)) || location.protocol.indexOf('file') >= 0) {        
     myFunction(this);
+  }
 };
 xhttp.open("GET", "./scoreboard/scoreboard.xml", true);
 xhttp.send();
