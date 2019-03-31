@@ -9,8 +9,8 @@ xhttp.send();
 
 function myFunction(xml) {
 var i;
-var logo = "assets/uyu.png";
-var team = "UYU";
+var logo = "teams/rize.png";
+var team = "rize";
 var xmlDoc = xml.responseXML;
 var text=["","","","","",""];
 var x = xmlDoc.getElementsByTagName("scores");
