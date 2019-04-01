@@ -6,8 +6,8 @@
   <label x="10" y="14" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
   <label x="10" y="44" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
   <label x="300" y="14" width="46" height="13">Rounds</label>
-  <lineEdit id="player1" x="60" y="10" width="171" height="20" dataSet="players.csv" >Name</lineEdit>
-  <lineEdit id="player2" x="60" y="40" width="171" height="20" dataSet="players.csv" >Name</lineEdit>
+  <lineEdit id="player1" dataSet="players.csv" dataField="2" x="60" y="10" width="171" height="20">Name</lineEdit>
+  <lineEdit id="player2" dataSet="players.csv" dataField="2" x="60" y="40" width="171" height="20">Name</lineEdit>
   <spinBox id="p1score" x="245" y="10" width="42" height="24" maximum="10" />
   <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
   <spinBox id="rounds" x="340" y="10" width="42" height="24" maximum="10" />
@@ -22,19 +22,19 @@
   <lineEdit id="caster2" x="60" y="40" width="150" height="20" />
   <label x="220" y="14" width="45" height="13">Twitter</label>
   <label x="220" y="44" width="45" height="13">Twitter</label>
-  <lineEdit id="twitter1" x="265" y="10" width="100" height="20" />
-  <lineEdit id="twitter2" x="265" y="40" width="100" height="20" />
+  <lineEdit id="twitter1" x="265" y="10" width="100" height="20">@handle</lineEdit>
+  <lineEdit id="twitter2" x="265" y="40" width="100" height="20">@handle</lineEdit>
  </tab>
- <tab name="Misc 1">
-  <label x="10" y="14" width="46" height="13">mText 1</label>
-  <label x="10" y="44" width="46" height="13">mText 2</label>
+ <tab name="Misc">
+  <label x="10" y="14" width="46" height="13">Text 1</label>
+  <label x="10" y="44" width="46" height="13">Text 2</label>
   <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
   <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
  </tab>
- <tab name="Misc 2">
-  <label x="10" y="14" width="46" height="13">mText 3</label>
-  <label x="10" y="44" width="46" height="13">mText 4</label>
-  <lineEdit id="mText3" x="60" y="10" width="321" height="20" />
-  <lineEdit id="mText4" x="60" y="40" width="321" height="20" />
+ <tab name="ID">
+  <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>
+  <label x="10" y="44" width="125" height="13">Player 2 ID [ Do not edit ]</label>
+  <lineEdit id="p1id" x="140" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player1" />
+  <lineEdit id="p2id" x="140" y="40" width="50" height="20" dataSet="players.csv" dataField="1" master="player2" />
  </tab>
 </layout>
