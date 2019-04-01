@@ -1,0 +1,40 @@
+<!DOCTYPE StreamControlLayout>
+<layout width="400" height="140" tabbed="1">
+
+ <tab name="Match Info">
+
+  <label x="10" y="14" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
+  <label x="10" y="44" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
+  <label x="300" y="14" width="46" height="13">Rounds</label>
+  <lineEdit id="player1" x="60" y="10" width="171" height="20" dataSet="players.csv" >Name</lineEdit>
+  <lineEdit id="player2" x="60" y="40" width="171" height="20" dataSet="players.csv" >Name</lineEdit>
+  <spinBox id="p1score" x="245" y="10" width="42" height="24" maximum="10" />
+  <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
+  <spinBox id="rounds" x="340" y="10" width="42" height="24" maximum="10" />
+  <button type="reset" x="300" y="40" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
+  <button type="swap" x="340" y="40" width="41" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="player1,p1score" swapSet2="player2,p2score">Swap</button>
+ </tab>
+
+ <tab name="Commentary">
+  <label x="10" y="14" width="45" height="13">Caster 1</label>
+  <label x="10" y="44" width="45" height="13">Caster 2</label>
+  <lineEdit id="caster1" x="60" y="10" width="150" height="20" />
+  <lineEdit id="caster2" x="60" y="40" width="150" height="20" />
+  <label x="220" y="14" width="45" height="13">Twitter</label>
+  <label x="220" y="44" width="45" height="13">Twitter</label>
+  <lineEdit id="twitter1" x="265" y="10" width="100" height="20" />
+  <lineEdit id="twitter2" x="265" y="40" width="100" height="20" />
+ </tab>
+ <tab name="Misc 1">
+  <label x="10" y="14" width="46" height="13">mText 1</label>
+  <label x="10" y="44" width="46" height="13">mText 2</label>
+  <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
+  <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
+ </tab>
+ <tab name="Misc 2">
+  <label x="10" y="14" width="46" height="13">mText 3</label>
+  <label x="10" y="44" width="46" height="13">mText 4</label>
+  <lineEdit id="mText3" x="60" y="10" width="321" height="20" />
+  <lineEdit id="mText4" x="60" y="40" width="321" height="20" />
+ </tab>
+</layout>

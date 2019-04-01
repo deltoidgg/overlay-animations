@@ -17,7 +17,8 @@
     margin-left: 15px;
 }
 .image {    
-    width: 80px;
+    max-width: 100px;
+    max-height: 60px;
     -webkit-transform: skew(-20deg);
     -moz-transform: skew(-20deg);
     transform: skew(-20deg);
