@@ -1,16 +1,18 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1554157617</timestamp>
+ <timestamp>1554315966</timestamp>
  <caster1>PunLife</caster1>
  <caster2>SHEN</caster2>
  <mText1></mText1>
  <mText2></mText2>
- <p1id>0001</p1id>
+ <p1id>0002</p1id>
  <p1score>0</p1score>
- <p2id>0012</p2id>
+ <p1team>RIZE</p1team>
+ <p2id>0001</p2id>
  <p2score>0</p2score>
- <player1>Vitolic</player1>
- <player2>Letho/DeadonFrost</player2>
+ <p2team>200K</p2team>
+ <player1>Wiki</player1>
+ <player2>Vitolic</player2>
  <rounds>0</rounds>
  <twitter1></twitter1>
  <twitter2></twitter2>

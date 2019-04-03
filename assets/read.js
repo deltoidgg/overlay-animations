@@ -9,8 +9,7 @@ xhttp.send();
 
 function myFunction(xml) {
 var i;
-var logo = "teams/rize.png";
-var team = "rize";
+var logo = "teams/default.png";
 
 // get(teamFromServer && idFromServer)
 // team = teamFromServer
@@ -18,6 +17,7 @@ var team = "rize";
 
 var xmlDoc = xml.responseXML;
 var text=["","","","","",""];
+var team=["",""];
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
   text[0] += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
@@ -26,9 +26,12 @@ for (i = 0; i <x.length; i++) {
   text[3] += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
   text[4] += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
   text[5] += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
-  }
+  
+  team[0] += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
+  team[1] += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  }  
 
 document.getElementById("text").innerHTML = text[n];
-document.getElementById("team").innerHTML = team;
+document.getElementById("team").innerHTML = team[n];
 document.getElementById("logo").src = logo;
 }
