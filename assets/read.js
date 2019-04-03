@@ -11,6 +11,11 @@ function myFunction(xml) {
 var i;
 var logo = "teams/rize.png";
 var team = "rize";
+
+// get(teamFromServer && idFromServer)
+// team = teamFromServer
+// logo = "teams/" + idFromServer + ".png"
+
 var xmlDoc = xml.responseXML;
 var text=["","","","","",""];
 var x = xmlDoc.getElementsByTagName("items");
