@@ -1,3 +1,10 @@
+:root {
+  --blue: linear-gradient(to bottom, #3fb4bf, #bafafc, #28abb3, #b7f7fb, #1ca8aa);
+  --gold: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  --silver: linear-gradient(to bottom, #c4c4c4, #ffffff, #b4b4b4, #ffffff, #afafaf);
+  --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
+  --yellow: #eab600;
+}
 .container {
     overflow: hidden;
   }
@@ -11,18 +18,16 @@
     position: relative;
     
     border-right: 10px solid;
-    -moz-border-image: -moz-linear-gradient(top, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    -webkit-border-image: -webkit-linear-gradient(top, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    border-image: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    border-image: var(--gold);
     border-image-slice: 1;
 
     animation-name: caster;
-    animation-duration: 1s;  
+    animation-duration: 1.5s;  
 }
 
 .type {
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 40px;    
+    font-size: 36px;    
 
     display: flex;
     
@@ -33,22 +38,54 @@
     align-items: center;
     color: #fff; 
 }
-
+.team {
+  color: var(--yellow); 
+  font-style: italic;
+  margin-right: 10px;
+}
 .sponsor {
-    width: 735px;
-    height: 170px;
+    width: 700px;
+    height: 150px;
     margin: 0px;
     
     animation-name: sponsor;
-    animation-duration: 1s;  
+    animation-duration: 1.5s;  
 }
 
 @keyframes caster {
-    0%   {width: 35px;}
-    100% {width: 335px;}
+  0%   {
+    width: 0px;
+    height: 0px;
   }
+  25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 55px;
+  }
+  100%   {
+    width: 335px;
+    height: 55px;
+  }
+}
 
 @keyframes sponsor {
-    0%   {width: 35px;}
-    100% {width: 735px;}
+  0%   {
+    width: 0px;
+    height: 0px;
   }
+  25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 150px;
+  }
+  100%   {
+    width: 700px;
+    height: 150px;
+  }
+}
