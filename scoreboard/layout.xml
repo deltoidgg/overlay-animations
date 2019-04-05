@@ -26,10 +26,10 @@
   <lineEdit id="twitter2" x="265" y="40" width="100" height="20">@handle</lineEdit>
  </tab>
  <tab name="Misc">
-  <label x="10" y="14" width="46" height="13">Text 1</label>
-  <label x="10" y="44" width="46" height="13">Text 2</label>
-  <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
-  <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
+  <label x="10" y="14" width="46" height="13">Misc Text</label>
+  <label x="10" y="44" width="46" height="13">Round</label>
+  <lineEdit id="mText" x="60" y="10" width="321" height="20" />
+  <lineEdit id="round" x="60" y="40" width="321" height="20" />
  </tab>
  <tab name="ID">
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>

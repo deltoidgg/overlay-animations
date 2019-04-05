@@ -16,7 +16,7 @@ var logo = "teams/default.png";
 // logo = "teams/" + idFromServer + ".png"
 
 var xmlDoc = xml.responseXML;
-var text=["","","","","",""];
+var text=["","","","","","",""];
 var team=["",""];
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
@@ -26,6 +26,7 @@ for (i = 0; i <x.length; i++) {
   text[3] += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
   text[4] += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
   text[5] += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
+  text[6] += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
   
   team[0] += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
   team[1] += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
