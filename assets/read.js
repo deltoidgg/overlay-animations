@@ -4,12 +4,12 @@ xhttp.onreadystatechange = function() {
     myFunction(this);
   }
 };
-xhttp.open("GET", "./scoreboard/streamcontrol.xml", true);
+xhttp.open("GET", "../scoreboard/streamcontrol.xml", true);
 xhttp.send();
 
 function myFunction(xml) {
 var i;
-var logo = "teams/default.png";
+var logo = "../teams/default.png";
 
 // get(teamFromServer && idFromServer)
 // team = teamFromServer
