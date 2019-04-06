@@ -14,12 +14,22 @@
   <checkBox x="300" y="10" width="45" height="20" id="p1L">(L)</checkBox>
   <checkBox x="345" y="10" width="45" height="20" id="p1W">(W)</checkBox>
   <checkBox x="300" y="40" width="45" height="20" id="p2L">(L)</checkBox>
-  <comboBox id="round" width="120" height="20" x="60" y="70" editable="1" >
-  <comboItem selected="true">Round 1</comboItem>
-  <comboItem>Round 2</comboItem>
-  <comboItem>Winners Quarter-Final</comboItem>
+  <comboBox id="round" width="135" height="20" x="60" y="70" editable="1" >
+  <comboItem selected="true">Winners Round 1</comboItem>
+  <comboItem>Winners Round 2</comboItem>
+  <comboItem>Winner Quarter-Final</comboItem>
   <comboItem>Winners Semi-Final</comboItem>
-  <comboItem>Test3</comboItem>
+  <comboItem>Winners Final</comboItem>
+  <comboItem>Grand Final</comboItem>
+  <comboItem>Grand Final Reset</comboItem>
+  <comboItem>Losers Round 1</comboItem>
+  <comboItem>Losers Round 2</comboItem>
+  <comboItem>Losers Round 3</comboItem>
+  <comboItem>Losers Round 4</comboItem>
+  <comboItem>Losers Round 5</comboItem>
+  <comboItem>Loser Quarter-Final</comboItem>
+  <comboItem>Losers Semi-Final</comboItem>
+  <comboItem>Losers Final</comboItem>
   </comboBox>
   <checkBox x="345" y="40" width="45" height="20" id="p2W">(W)</checkBox>
   <spinBox id="rounds" x="245" y="70" width="42" height="24" maximum="10" />
