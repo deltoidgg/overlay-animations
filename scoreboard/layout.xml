@@ -1,18 +1,30 @@
 <!DOCTYPE StreamControlLayout>
-<layout width="400" height="140" tabbed="1">
+<layout width="400" height="165" tabbed="1">
 
  <tab name="Match Info">
 
-  <label x="10" y="14" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
-  <label x="10" y="44" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
-  <label x="300" y="14" width="46" height="13">Rounds</label>
+  <label x="10" y="15" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
+  <label x="10" y="45" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
+  <label x="200" y="75" width="46" height="13">Rounds</label>
+  <label x="10" y="75" width="46" height="13">Round</label>
   <lineEdit id="player1" dataSet="players.csv" dataField="2" x="60" y="10" width="171" height="20">Name</lineEdit>
   <lineEdit id="player2" dataSet="players.csv" dataField="2" x="60" y="40" width="171" height="20">Name</lineEdit>
   <spinBox id="p1score" x="245" y="10" width="42" height="24" maximum="10" />
   <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
-  <spinBox id="rounds" x="340" y="10" width="42" height="24" maximum="10" />
-  <button type="reset" x="300" y="40" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
-  <button type="swap" x="340" y="40" width="41" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="player1,p1score,p1id,p1team" swapSet2="player2,p2score,p2id,p2team">Swap</button>
+  <checkBox x="300" y="10" width="45" height="20" id="p1L">(L)</checkBox>
+  <checkBox x="345" y="10" width="45" height="20" id="p1W">(W)</checkBox>
+  <checkBox x="300" y="40" width="45" height="20" id="p2L">(L)</checkBox>
+  <comboBox id="round" width="120" height="20" x="60" y="70" editable="1" >
+  <comboItem selected="true">Round 1</comboItem>
+  <comboItem>Round 2</comboItem>
+  <comboItem>Winners Quarter-Final</comboItem>
+  <comboItem>Winners Semi-Final</comboItem>
+  <comboItem>Test3</comboItem>
+  </comboBox>
+  <checkBox x="345" y="40" width="45" height="20" id="p2W">(W)</checkBox>
+  <spinBox id="rounds" x="245" y="70" width="42" height="24" maximum="10" />
+  <button type="reset" x="300" y="70" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
+  <button type="swap" x="340" y="70" width="41" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="player1,p1score,p1id,p1team" swapSet2="player2,p2score,p2id,p2team">Swap</button>
  </tab>
 
  <tab name="Commentary">
@@ -26,10 +38,10 @@
   <lineEdit id="twitter2" x="265" y="40" width="100" height="20">@handle</lineEdit>
  </tab>
  <tab name="Misc">
-  <label x="10" y="14" width="46" height="13">Misc Text</label>
-  <label x="10" y="44" width="46" height="13">Round</label>
-  <lineEdit id="mText" x="60" y="10" width="321" height="20" />
-  <lineEdit id="round" x="60" y="40" width="321" height="20" />
+  <label x="10" y="14" width="46" height="13">Misc 1</label>
+  <label x="10" y="44" width="46" height="13">Misc 2</label>
+  <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
+  <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
  </tab>
  <tab name="ID">
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>

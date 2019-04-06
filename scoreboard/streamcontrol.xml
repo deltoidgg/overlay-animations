@@ -1,18 +1,23 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1554491837</timestamp>
+ <timestamp>1554548114</timestamp>
  <caster1>PunLife</caster1>
  <caster2>JusticeSoulTuna</caster2>
- <mText></mText>
+ <mText1></mText1>
+ <mText2></mText2>
+ <p1L>0</p1L>
+ <p1W>0</p1W>
  <p1id>0037</p1id>
- <p1score>2</p1score>
+ <p1score>0</p1score>
  <p1team>SaltyEU</p1team>
+ <p2L>0</p2L>
+ <p2W>0</p2W>
  <p2id>0004</p2id>
- <p2score>2</p2score>
+ <p2score>0</p2score>
  <p2team>ELF</p2team>
  <player1>PiKa</player1>
  <player2>Shirdel</player2>
- <round>WINNER'S FINAL</round>
+ <round>Grand Final Reset</round>
  <rounds>0</rounds>
  <twitter1>@TheRealPunLife</twitter1>
  <twitter2>@JusticeSoulTuna</twitter2>
