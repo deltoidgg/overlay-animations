@@ -17,7 +17,8 @@ var logo = "../teams/default.png";
 
 var xmlDoc = xml.responseXML;
 var text=["","","","","","",""];
-var team=["",""];
+var team=["","","","","","",""];
+var p=["","","","","","",""];
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
   text[0] += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
@@ -30,7 +31,30 @@ for (i = 0; i <x.length; i++) {
   
   team[0] += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
   team[1] += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  team[4] += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
+  team[5] += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
+  team[6] += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
+
+  p[0] += x[i].getElementsByTagName("p1L")[0].childNodes[0].nodeValue;
+  p[1] += x[i].getElementsByTagName("p1W")[0].childNodes[0].nodeValue;
+  p[2] += x[i].getElementsByTagName("p2L")[0].childNodes[0].nodeValue;
+  p[3] += x[i].getElementsByTagName("p2W")[0].childNodes[0].nodeValue;
   }  
+
+  if (p[0] == 1) {
+    text[0] += ' (L)';
+  }
+  if (p[1] == 1) {
+    text[0] += ' (W)';
+  }
+  if (p[2] == 1) {
+    text[1] += ' (L)';
+  }
+  if (p[3] == 1) {
+    text[1] += ' (W)';
+  }
+
+  
 
 document.getElementById("text").innerHTML = text[n];
 document.getElementById("team").innerHTML = team[n];

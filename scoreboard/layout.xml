@@ -5,7 +5,7 @@
 
   <label x="10" y="15" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
   <label x="10" y="45" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
-  <label x="200" y="75" width="46" height="13">Rounds</label>
+  <label x="205" y="75" width="46" height="13">Best of</label>
   <label x="10" y="75" width="46" height="13">Round</label>
   <lineEdit id="player1" dataSet="players.csv" dataField="2" x="60" y="10" width="171" height="20">Name</lineEdit>
   <lineEdit id="player2" dataSet="players.csv" dataField="2" x="60" y="40" width="171" height="20">Name</lineEdit>
@@ -13,7 +13,8 @@
   <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
   <checkBox x="300" y="10" width="45" height="20" id="p1L">(L)</checkBox>
   <checkBox x="345" y="10" width="45" height="20" id="p1W">(W)</checkBox>
-  <checkBox x="300" y="40" width="45" height="20" id="p2L">(L)</checkBox>
+  <checkBox x="300" y="40" width="45" height="20" id="p2L">(L)</checkBox>  
+  <checkBox x="345" y="40" width="45" height="20" id="p2W">(W)</checkBox>
   <comboBox id="round" width="135" height="20" x="60" y="70" editable="1" >
   <comboItem selected="true">Winners Round 1</comboItem>
   <comboItem>Winners Round 2</comboItem>
@@ -31,10 +32,9 @@
   <comboItem>Losers Semi-Final</comboItem>
   <comboItem>Losers Final</comboItem>
   </comboBox>
-  <checkBox x="345" y="40" width="45" height="20" id="p2W">(W)</checkBox>
-  <spinBox id="rounds" x="245" y="70" width="42" height="24" maximum="10" />
+  <spinBox id="bestof" x="245" y="70" width="42" height="24" maximum="10" />
   <button type="reset" x="300" y="70" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
-  <button type="swap" x="340" y="70" width="41" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="player1,p1score,p1id,p1team" swapSet2="player2,p2score,p2id,p2team">Swap</button>
+  <button type="swap" x="340" y="70" width="41" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="player1,p1score,p1L,p1W,p1id,p1team" swapSet2="player2,p2score,p2L,p2W,p2id,p2team">Swap</button>
  </tab>
 
  <tab name="Commentary">
