@@ -9,7 +9,7 @@ xhttp.send();
 
 function myFunction(xml) {
 var i;
-var logo = "../teams/default.png";
+var logo;
 
 // get(teamFromServer && idFromServer)
 // team = teamFromServer
@@ -54,6 +54,22 @@ for (i = 0; i <x.length; i++) {
     text[1] += ' (W)';
   }
 
+  switch (team[n]) {
+    case 'ELF':
+      logo = "../teams/elf.png"
+      break;
+    case 'DG':
+      logo = "../teams/districtg.png"
+      break;
+    case '200K':
+      logo = "../teams/200k.png"
+      break;
+    case 'RIZE':
+      logo = "../teams/rize.png"
+      break;
+    default:
+      logo = "../teams/default.png";
+  }
   
 
 document.getElementById("text").innerHTML = text[n];
