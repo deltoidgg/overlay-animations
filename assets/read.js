@@ -55,6 +55,8 @@ for (i = 0; i <x.length; i++) {
   }
 
   switch (team[n]) {
+    case 'ELF | TKC':
+    case 'DS | ELF':
     case 'ELF':
       logo = "../teams/elf.png"
       break;
@@ -66,6 +68,9 @@ for (i = 0; i <x.length; i++) {
       break;
     case 'RIZE':
       logo = "../teams/rize.png"
+      break;
+    case 'SWFGC':
+      logo = "../teams/swfgc.png"
       break;
     default:
       logo = "../teams/default.png";
