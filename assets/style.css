@@ -52,6 +52,39 @@
     animation-duration: 1.5s;  
 }
 
+.shape-l {    
+  position: absolute;
+  right: 0;
+  margin-right: -10px;
+
+  border-right: none;
+  border-left: 10px solid;
+}
+
+.right {    
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(20deg);    
+}
+
+.sponsor-l {
+  margin-right: -30px;
+}
+
+.shape-r {
+  margin-left: -10px;
+}
+
+.left {    
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  transform: skew(-20deg);    
+}
+
+.sponsor-r {
+  margin-left: -30px;
+}
+
 @keyframes caster {
   0%   {
     width: 0px;
