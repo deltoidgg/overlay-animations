@@ -30,6 +30,16 @@
     justify-content: flex-end;
 }
 
+.fix {    
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+.flex {
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+
 .type {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 26px;    
@@ -66,8 +76,12 @@
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
 }
 
-.score {
-    
+.image {    
+  max-width: 100px;
+  max-height: 60px;
+}
+
+.score {    
     width: 125px;
     height: 75px;
     margin: 0px;
@@ -75,6 +89,27 @@
     animation-name: score;
     animation-duration: 1.5s;  
     background: linear-gradient(rgba(72,72,72,0.9),rgba(35,35,35,0.9));
+}
+
+.fix {    
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+
+  border-right: none;
+  border-left: 10px solid;
+}
+
+.right {    
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(20deg);    
+}
+
+.left {    
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  transform: skew(-20deg);    
 }
 
 @keyframes caster {
