@@ -30,16 +30,6 @@
     justify-content: flex-end;
 }
 
-.fix {    
-  position: absolute;
-  right: 0;
-  margin-right: 10px;
-}
-.flex {
-  margin-left: 10px;
-  justify-content: flex-start;
-}
-
 .type {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 26px;    
@@ -91,13 +81,15 @@
     background: linear-gradient(rgba(72,72,72,0.9),rgba(35,35,35,0.9));
 }
 
+
+.flex {
+  margin-left: 10px;
+  justify-content: flex-start;
+}
 .fix {    
   position: absolute;
   right: 0;
   margin-right: 10px;
-
-  border-right: none;
-  border-left: 10px solid;
 }
 
 .right {    
