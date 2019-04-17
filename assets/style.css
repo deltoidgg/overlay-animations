@@ -18,7 +18,7 @@
     position: relative;
     
     border-right: 10px solid;
-    border-image: var(--blue);
+    border-image: var(--gold);
     border-image-slice: 1;
 
     animation-name: caster;
