@@ -75,6 +75,9 @@ for (i = 0; i <x.length; i++) {
     case 'NFC3D':
       logo = "../assets/teams/nfc.png"
       break;
+    case 'Harriers':
+      logo = "../assets/teams/harriers.png"
+      break;
     default:
       logo = "../assets/teams/default.png";
   }
