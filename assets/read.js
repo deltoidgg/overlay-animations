@@ -58,25 +58,25 @@ for (i = 0; i <x.length; i++) {
     case 'ELF | TKC':
     case 'DS | ELF':
     case 'ELF':
-      logo = "../teams/elf.png"
+      logo = "../assets/teams/elf.png"
       break;
     case 'DG':
-      logo = "../teams/districtg.png"
+      logo = "../assets/teams/districtg.png"
       break;
     case '200K':
-      logo = "../teams/200k.png"
+      logo = "../assets/teams/200k.png"
       break;
     case 'RIZE':
-      logo = "../teams/rize.png"
+      logo = "../assets/teams/rize.png"
       break;
     case 'SWFGC':
-      logo = "../teams/swfgc.png"
+      logo = "../assets/teams/swfgc.png"
       break;
     case 'NFC3D':
-      logo = "../teams/nfc.png"
+      logo = "../assets/teams/nfc.png"
       break;
     default:
-      logo = "../teams/default.png";
+      logo = "../assets/teams/default.png";
   }
   
 
