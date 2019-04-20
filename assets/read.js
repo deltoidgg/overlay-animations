@@ -72,6 +72,7 @@ for (i = 0; i <x.length; i++) {
     case 'SWFGC':
       logo = "../assets/teams/swfgc.png"
       break;
+    case 'NFC':
     case 'NFC3D':
       logo = "../assets/teams/nfc.png"
       break;
