@@ -1,24 +1,24 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1555626781</timestamp>
- <bestof>5</bestof>
+ <timestamp>1555956794</timestamp>
+ <bestof>3</bestof>
  <caster1>PunLife</caster1>
  <caster2>TEMPHUiBIS</caster2>
  <mText1></mText1>
  <mText2></mText2>
- <p1L>1</p1L>
+ <p1L>0</p1L>
  <p1W>0</p1W>
- <p1id>0027</p1id>
+ <p1id>0001</p1id>
  <p1score>2</p1score>
- <p1team>DS | ELF</p1team>
- <p2L>1</p2L>
+ <p1team>200K</p1team>
+ <p2L>0</p2L>
  <p2W>0</p2W>
- <p2id>0036</p2id>
+ <p2id>0035</p2id>
  <p2score>1</p2score>
- <p2team>SaltyEU</p2team>
- <player1>K-WISS</player1>
- <player2>PiKa</player2>
- <round>Grand Final Reset</round>
+ <p2team>RIZE</p2team>
+ <player1>Vitolic</player1>
+ <player2>GoukiAkuma</player2>
+ <round>Winners Round 1</round>
  <twitter1>@TheRealPunLife</twitter1>
  <twitter2>@TEMPHUiBIS</twitter2>
 </items>
