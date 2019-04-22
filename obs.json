@@ -55,8 +55,8 @@
         "sync": 0,
         "volume": 0.91267293691635132
     },
-    "current_program_scene": "Tekken",
-    "current_scene": "Tekken",
+    "current_program_scene": "Finish",
+    "current_scene": "Finish",
     "current_transition": "Stinger",
     "groups": [
         {
@@ -301,7 +301,7 @@
         },
         "scripts-tool": []
     },
-    "name": "Untitled",
+    "name": "TNT",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -477,7 +477,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/border.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/border.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -500,7 +500,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/border.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/border.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -523,7 +523,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/bg.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/bg.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -1094,7 +1094,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/tnt.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/tnt.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -2075,7 +2075,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/TNT logo.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/TNT logo.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -2098,7 +2098,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/bg.jpg"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/bg.jpg"
             },
             "sync": 0,
             "volume": 1.0
@@ -2333,7 +2333,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/TNT logo.png"
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/TNT logo.png"
             },
             "sync": 0,
             "volume": 1.0
