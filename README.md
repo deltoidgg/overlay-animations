@@ -10,11 +10,16 @@ logo overlay: width 770, height 170
 
 player overlay: width 500, height 45
 
+player-combined overlay: width 500, height 45
+
 score overlay: width 175, height 75
 
 round overlay: width 210, height 45
 
 Tick the 'Refresh browser when scene becomes active' option to force animation load on scene switch.
+
+# Adding players & teams
+To add players you'll need to edit them into the players.csv file with their team information. Functionality is coming soon to be able to easily add support for team logos.
 
 # SteamControl
 
