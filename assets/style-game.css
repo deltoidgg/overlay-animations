@@ -15,6 +15,8 @@
     height: 45px;
     margin: 0px;
     background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
+    /* background: url('../assets/bg.png'); */
+    background-size: 500px 45px;
     overflow: hidden;
     position: relative;
     
@@ -28,6 +30,16 @@
     
     display: inline-flex;
     justify-content: flex-end;
+
+    
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+.extension {
+  width: 50px;
+  animation-name: extension;
+  animation-duration: 3s;  
+  position: absolute;
 }
 
 .type {
@@ -43,6 +55,12 @@
     justify-content: center;
     align-items: center;
     color: #fff; 
+}
+
+.large {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 32px;    
+  width: 50px;
 }
 
 .team {
@@ -64,6 +82,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
+  box-shadow: inset 0px 0px 10px #000;
 }
 
 .image {    
@@ -124,6 +143,29 @@
     }
     100%   {
       width: 450px;
+      height: 45px;
+    }
+  }
+
+  @keyframes extension {
+    0%   {
+      width: 0px;
+      height: 0px;
+    }
+    25%   {
+      width: 0px;
+      height: 0px;
+    }
+    50%   {
+      width: 0px;
+      height: 45px;
+    }
+    75%   {
+      width: 50px;
+      height: 45px;
+    }
+    100%   {
+      width: 50px;
       height: 45px;
     }
   }
