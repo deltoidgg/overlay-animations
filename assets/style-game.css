@@ -7,8 +7,7 @@
 }
 
 .container {
-    overflow: hidden;
-    right: 0;
+
   }
   
 .shape {
@@ -33,7 +32,7 @@
     justify-content: flex-end;
 
     
-    box-shadow: inset 0px 0px 10px #000;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
 }
 
 .extension {
@@ -45,13 +44,14 @@
 
 .type {
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 26px;    
+    font-size: 26px;
     text-transform: uppercase;
 
     display: inline-flex;
     
     width: 350px;
     height: 100%; 
+    white-space: nowrap;
 
     justify-content: center;
     align-items: center;
