@@ -7,7 +7,7 @@
 }
 
 .container {
-
+display: inline-flex;
   }
   
 .shape {
