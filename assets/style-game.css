@@ -7,7 +7,8 @@
 }
 
 .container {
-display: inline-flex;
+  display: inline-flex;
+  position: absolute;
   }
   
 .shape {
@@ -40,6 +41,7 @@ display: inline-flex;
   animation-name: extension;
   animation-duration: 3s;  
   position: absolute;
+  display: inline-flex;
 }
 
 .type {
@@ -72,9 +74,10 @@ display: inline-flex;
 
 .logo {
   display: inline-flex;
-  
-  width: 100px;
-  height: 45px;  
+  --width: 100px;
+  width: var(--width);
+  --height: 45px;  
+  height: var(--height);
 
   justify-content: center;
   align-items: center;
@@ -87,10 +90,8 @@ display: inline-flex;
 }
 
 .image {  
-  width: 120px;
-  height: 100%;  
-  max-width: 120px;
-  max-height: 60px;
+  max-width: calc(1.2*var(--width));
+  max-height: calc(0.7*var(--height));
 }
 
 .flag {
