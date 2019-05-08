@@ -54,44 +54,76 @@ for (i = 0; i <x.length; i++) {
     case 'ELF | TKC':
     case 'DS | ELF':
     case 'ELF':
-      logo = "../assets/teams/elf.png"
+      p1logo = "../assets/teams/elf.png"
       break;
     case 'DG':
-      logo = "../assets/teams/districtg.png"
+     p1logo = "../assets/teams/districtg.png"
       break;
     case '200K':
-      logo = "../assets/teams/200k.png"
+      p1logo = "../assets/teams/200k.png"
       break;
     case 'RIZE':
-      logo = "../assets/teams/rize.png"
+      p1logo = "../assets/teams/rize.png"
       break;
     case 'SWFGC':
-      logo = "../assets/teams/swfgc.png"
+      p1logo = "../assets/teams/swfgc.png"
       break;
     case 'NFC':
     case 'NFC3D':
-      logo = "../assets/teams/nfc.png"
+      p1logo = "../assets/teams/nfc.png"
       break;
     case 'NJT':
-      logo = "../assets/teams/nijota.png"
+      p1logo = "../assets/teams/nijota.png"
     break;
     case 'Harriers':
-      logo = "../assets/teams/harriers.png"
+      p1logo = "../assets/teams/harriers.png"
       break;
     default:
-      logo = "../assets/teams/default.png";
+      p1logo = "../assets/teams/default.png";
+  }
+
+  switch (p2team) {
+    case 'ELF | TKC':
+    case 'DS | ELF':
+    case 'ELF':
+      p2logo = "../assets/teams/elf.png"
+      break;
+    case 'DG':
+     p2logo = "../assets/teams/districtg.png"
+      break;
+    case '200K':
+    p2logo = "../assets/teams/200k.png"
+      break;
+    case 'RIZE':
+    p2logo = "../assets/teams/rize.png"
+      break;
+    case 'SWFGC':
+    p2logo = "../assets/teams/swfgc.png"
+      break;
+    case 'NFC':
+    case 'NFC3D':
+    p2logo = "../assets/teams/nfc.png"
+      break;
+    case 'NJT':
+    p2logo = "../assets/teams/nijota.png"
+    break;
+    case 'Harriers':
+    p2logo = "../assets/teams/harriers.png"
+      break;
+    default:
+    p2logo = "../assets/teams/default.png";
   }
   
   switch (n) {
     case 0:
     document.getElementById("player1").innerHTML = player1;    
     document.getElementById("p1team").innerHTML = p1team;
-    document.getElementById("logo").src = logo;
+    document.getElementById("p1logo").src = p1logo;
       break;
     case 1:
     document.getElementById("player2").innerHTML = player2;
     document.getElementById("p2team").innerHTML = p2team;
-    document.getElementById("logo").src = logo;
+    document.getElementById("p2logo").src = p2logo;
       break;
     case 2:
       document.getElementById("caster1").innerHTML = caster1;
@@ -116,9 +148,8 @@ for (i = 0; i <x.length; i++) {
     document.getElementById("p2team").innerHTML = p2team;
     document.getElementById("p1score").innerHTML = p1score;
     document.getElementById("p2score").innerHTML = p2score;
-    document.getElementById("logo").src = logo;
+    document.getElementById("p1logo").src = p1logo;
+    document.getElementById("p2logo").src = p2logo;
     break;
-    default:
-      logo = "../assets/teams/default.png";
   }
 }
