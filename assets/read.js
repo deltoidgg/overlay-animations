@@ -16,25 +16,21 @@ var logo;
 // logo = "teams/" + idFromServer + ".png"
 
 var xmlDoc = xml.responseXML;
-var text=["","","","","","",""];
-var team=["","","","","","",""];
-var p=["","","","","","",""];
+var player1="", player2="", caster1="", caster2="", p1score="", p2score="", p1team="", p2team="", round="", bestof="";
+var p=["","","",""];
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
-  text[0] += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
-  text[1] += x[i].getElementsByTagName("player2")[0].childNodes[0].nodeValue;
-  text[2] += x[i].getElementsByTagName("caster1")[0].childNodes[0].nodeValue;
-  text[3] += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
-  text[4] += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
-  text[5] += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
-  text[6] += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
+  player1 += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
+  player2 += x[i].getElementsByTagName("player2")[0].childNodes[0].nodeValue;
+  caster1 += x[i].getElementsByTagName("caster1")[0].childNodes[0].nodeValue;
+  caster2 += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
+  p1score += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
+  p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
+  p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
+  p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
+  bestof += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
   
-  team[0] += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
-  team[1] += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
-  team[4] += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
-  team[5] += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
-  team[6] += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
-
   p[0] += x[i].getElementsByTagName("p1L")[0].childNodes[0].nodeValue;
   p[1] += x[i].getElementsByTagName("p1W")[0].childNodes[0].nodeValue;
   p[2] += x[i].getElementsByTagName("p2L")[0].childNodes[0].nodeValue;
@@ -42,19 +38,19 @@ for (i = 0; i <x.length; i++) {
   }  
 
   if (p[0] == 1) {
-    text[0] += ' (L)';
+    player1 += ' (L)';
   }
   if (p[1] == 1) {
-    text[0] += ' (W)';
+    player1 += ' (W)';
   }
   if (p[2] == 1) {
-    text[1] += ' (L)';
+    player2 += ' (L)';
   }
   if (p[3] == 1) {
-    text[1] += ' (W)';
+    player2 += ' (W)';
   }
 
-  switch (team[n]) {
+  switch (p1team) {
     case 'ELF | TKC':
     case 'DS | ELF':
     case 'ELF':
@@ -86,8 +82,43 @@ for (i = 0; i <x.length; i++) {
       logo = "../assets/teams/default.png";
   }
   
-
-document.getElementById("text").innerHTML = text[n];
-document.getElementById("team").innerHTML = team[n];
-document.getElementById("logo").src = logo;
+  switch (n) {
+    case 0:
+    document.getElementById("player1").innerHTML = player1;    
+    document.getElementById("p1team").innerHTML = p1team;
+    document.getElementById("logo").src = logo;
+      break;
+    case 1:
+    document.getElementById("player2").innerHTML = player2;
+    document.getElementById("p2team").innerHTML = p2team;
+    document.getElementById("logo").src = logo;
+      break;
+    case 2:
+      document.getElementById("caster1").innerHTML = caster1;
+      break;
+    case 3:
+    document.getElementById("caster2").innerHTML = caster2;
+      break;
+    case 4:
+    document.getElementById("p1score").innerHTML = p1score;
+      break;
+    case 5:
+    document.getElementById("p2score").innerHTML = p2score;
+      break;
+    case 6:
+    document.getElementById("round").innerHTML = round;
+    document.getElementById("bestof").innerHTML = bestof;
+    break;
+    case 7:
+    document.getElementById("player1").innerHTML = player1;
+    document.getElementById("player2").innerHTML = player2;
+    document.getElementById("p1team").innerHTML = p1team;
+    document.getElementById("p2team").innerHTML = p2team;
+    document.getElementById("p1score").innerHTML = p1score;
+    document.getElementById("p2score").innerHTML = p2score;
+    document.getElementById("logo").src = logo;
+    break;
+    default:
+      logo = "../assets/teams/default.png";
+  }
 }
