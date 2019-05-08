@@ -3,6 +3,7 @@
   --gold: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
   --silver: linear-gradient(to bottom, #c4c4c4, #ffffff, #b4b4b4, #ffffff, #afafaf);
   --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
+  --red: linear-gradient(#ed1b24, #aa1d23);
   --yellow: #eab600;
 }
 
