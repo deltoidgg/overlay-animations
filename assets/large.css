@@ -1,8 +1,8 @@
 .shape {
-  width: 550px;
-  height: 55px;
+  width: 525px;
+  height: 45px;
   margin: 0px;
-  background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
+  background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
   background: url('../assets/bg.png');
   background-size: 500px 55px;
   overflow: hidden;
@@ -24,16 +24,17 @@
 }
 
 .extension {
-width: 50px;
+width: 60px;
 animation-name: extension;
 animation-duration: 3s;  
+background: url('../assets/bg.png');
 position: absolute;
 }
 .logo {
   display: inline-flex;
   --width: 120px;
   width: var(--width);
-  --height: 55px;  
+  --height: 45px;  
   height: var(--height);
 
   justify-content: center;
@@ -64,7 +65,7 @@ position: absolute;
 .large {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36px;    
-  width: 50px;
+  width: 60px;
 }
 @keyframes caster {
     0%   {
@@ -77,11 +78,11 @@ position: absolute;
     }
     50%   {
       width: 0px;
-      height: 55px;
+      height: 45px;
     }
     100%   {
-      width: 550px;
-      height: 55px;
+      width: 525px;
+      height: 45px;
     }
   }
 
@@ -96,14 +97,14 @@ position: absolute;
     }
     50%   {
       width: 0px;
-      height: 55px;
+      height: 45px;
     }
     75%   {
-      width: 50px;
-      height: 55px;
+      width: 60px;
+      height: 45px;
     }
     100%   {
-      width: 50px;
-      height: 55px;
+      width: 60px;
+      height: 45px;
     }
   }
