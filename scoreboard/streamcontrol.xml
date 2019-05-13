@@ -1,7 +1,7 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1557619400</timestamp>
- <bestof>3</bestof>
+ <timestamp>1557778183</timestamp>
+ <bestof>2</bestof>
  <caster1>PunLife</caster1>
  <caster2>TEMPHUiBIS</caster2>
  <mText1></mText1>
@@ -9,15 +9,15 @@
  <p1L>0</p1L>
  <p1W>0</p1W>
  <p1id>0004</p1id>
- <p1score>9</p1score>
+ <p1score>2</p1score>
  <p1team>DS | ELF</p1team>
  <p2L>0</p2L>
  <p2W>0</p2W>
- <p2id>0001</p2id>
- <p2score>10</p2score>
- <p2team>200K</p2team>
+ <p2id>0016</p2id>
+ <p2score>1</p2score>
+ <p2team>NJT</p2team>
  <player1>Shirdel</player1>
- <player2>Vitolic</player2>
+ <player2>Eternal Dragon</player2>
  <round>Winners Round 1</round>
  <twitter1>@TheRealPunLife</twitter1>
  <twitter2>@TEMPHUiBIS</twitter2>

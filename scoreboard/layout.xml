@@ -5,7 +5,7 @@
 
   <label x="10" y="15" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
   <label x="10" y="45" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
-  <label x="205" y="75" width="46" height="13">Best of</label>
+  <label x="205" y="75" width="46" height="13">First to</label>
   <label x="10" y="75" width="46" height="13">Round</label>
   <lineEdit id="player1" dataSet="players.csv" dataField="2" x="60" y="10" width="171" height="20">Name</lineEdit>
   <lineEdit id="player2" dataSet="players.csv" dataField="2" x="60" y="40" width="171" height="20">Name</lineEdit>

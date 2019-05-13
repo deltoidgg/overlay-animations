@@ -10,7 +10,7 @@
   
   border-style: solid;
   border-width: 0 10px 0 10px;
-  border-image: var(--gold);
+  border-image: var(--black);
   border-image-slice: 1;
 
   animation-name: caster;
@@ -45,6 +45,8 @@ position: absolute;
 
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
   box-shadow: inset 0px 0px 10px #000;
+
+  line-height:1em;
 }
 .type {
   font-family: 'PT Sans Narrow', sans-serif;
@@ -66,6 +68,49 @@ position: absolute;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36px;    
   width: 60px;
+}
+
+.round-shape {
+  margin-left: 10px;
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  transform: skew(-35deg);   
+  border-width: 0 10px 0 0;
+  animation-name: round;
+  animation-duration: 1.5s;  
+  clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
+}
+.round-left {    
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(35deg); 
+  
+  border-width: 0 0 0 10px;
+  justify-content: flex-start;
+  clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
+}
+
+.round-type {    
+  font-size: 26px;    
+  margin-left: 10px;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(35deg);    
+}
+
+@keyframes round {
+  0%   {
+    height: 0px;
+  }
+  50%   {
+    height: 0px;
+  }
+  100%   {
+    height: 45px;
+  }
 }
 @keyframes caster {
     0%   {
