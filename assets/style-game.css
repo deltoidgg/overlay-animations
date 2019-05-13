@@ -9,61 +9,83 @@
 
 .container {
   display: inline-flex;
-  position: absolute;
-  
+  position: absolute;  
   }
   
 .shape {
-    width: 450px;
-    height: 45px;
-    margin: 0px;
-    background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
-    /* background: url('../assets/bg.png');
-    background-size: 500px 45px; */
-    overflow: hidden;
-    position: relative;
-    
-    border-style: solid;
-    border-width: 0 10px 0 10px;
-    border-image: var(--gold);
-    border-image-slice: 1;
+  width: 525px;
+  height: 45px;
+  margin: 0px;
+  background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
+  background: url('../assets/bg.png');
+  background-size: 500px 55px;
+  overflow: hidden;
+  position: relative;
+  
+  border-style: solid;
+  border-width: 0 10px 0 10px;
+  border-image: var(--black);
+  border-image-slice: 1;
 
-    animation-name: caster;
-    animation-duration: 1.5s;  
-    
-    display: inline-flex;
-    justify-content: flex-end;
-    
-    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+  animation-name: caster;
+  animation-duration: 1.5s;  
+  
+  display: inline-flex;
+  justify-content: flex-end;
+
+  
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
 }
-
+.round {
+  margin-left: 10px;
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  transform: skew(-35deg);   
+  border-width: 0 10px 0 0;
+  animation-name: round;
+  animation-duration: 1.5s;  
+  clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
+}
+.round-left {    
+  transform: skew(35deg); 
+  border-width: 0 0 0 10px;
+  justify-content: flex-start;
+  clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
+}
 .extension {
-  width: 50px;
+  width: 60px;
   animation-name: extension;
   animation-duration: 3s;  
+  background: url('../assets/bg.png');
   position: absolute;
-  display: inline-flex;
 }
 
 .type {
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 26px;
-    text-transform: uppercase;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
-    display: inline-flex;
-    
-    width: 350px;
-    height: 100%; 
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: #fff; 
+  display: inline-flex;
+  
+  width: 430px;
+  height: 100%; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
 }
 
+.small {    
+  font-size: 26px;    
+  margin-left: 10px;    
+}
 .large {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 32px;    
-  width: 50px;
+  font-size: 36px;    
+  width: 60px;
 }
 
 .team {
@@ -80,7 +102,7 @@
 
 .logo {
   display: inline-flex;
-  --width: 100px;
+  --width: 120px;
   width: var(--width);
   --height: 45px;  
   height: var(--height);
@@ -93,13 +115,15 @@
 
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
   box-shadow: inset 0px 0px 10px #000;
+
+  line-height:1em;
 }
 
 .image {  
   max-width: calc(1.2*var(--width));
-  max-height: calc(0.7*var(--height));
-  
+  max-height: calc(0.7*var(--height));  
 }
+
 .flag {  
   width: calc(1*var(--width));
   height: calc(1.1*var(--height));
@@ -129,25 +153,16 @@
 }
 
 .right {    
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
   transform: skew(35deg);    
 }
 
 .left {    
-  -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg);
   transform: skew(-35deg);    
 }
 
 .first { 
   position: absolute;
-  /* opacity: 0; */
   animation: first 20s 0s infinite;
-  
-  /* backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-font-smoothing: subpixel-antialiased; */
 }
 .second {
   position: absolute;
@@ -155,30 +170,30 @@
 }
 
 @keyframes caster {
-    0%   {
-      width: 0px;
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 45px;
+  }
+  100%   {
+    width: 525px;
+    height: 45px;
+  }
+}
+  @keyframes round {
+    0%, 50%   {
       height: 0px;
-    }
-    25%   {
-      width: 0px;
-      height: 0px;
-    }
-    50%   {
-      width: 0px;
-      height: 45px;
     }
     100%   {
-      width: 450px;
       height: 45px;
     }
   }
 
   @keyframes extension {
-    0%   {
-      width: 0px;
-      height: 0px;
-    }
-    25%   {
+    0%, 25%   {
       width: 0px;
       height: 0px;
     }
@@ -186,22 +201,14 @@
       width: 0px;
       height: 45px;
     }
-    75%   {
-      width: 50px;
-      height: 45px;
-    }
-    100%   {
-      width: 50px;
+    75%, 100%   {
+      width: 60px;
       height: 45px;
     }
   }
 
 @keyframes score {
-  0%   {
-    width: 0px;
-    height: 0px;
-  }
-  25%   {
+  0%, 25%   {
     width: 0px;
     height: 0px;
   }
@@ -232,8 +239,7 @@
     /* opacity: 0;
     transform: translateY(30px); */
     margin-top: -100px;
-  }
-  
+  }  
 }
 
 @keyframes second {

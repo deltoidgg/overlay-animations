@@ -1,0 +1,152 @@
+.shape {
+    width: 450px;
+    height: 45px;
+    margin: 0px;
+    background: linear-gradient(rgba(72,72,72,0.7),rgba(35,35,35,0.7));
+    /* background: url('../assets/bg.png');
+    background-size: 500px 45px; */
+    overflow: hidden;
+    position: relative;
+    
+    border-style: solid;
+    border-width: 0 10px 0 10px;
+    border-image: var(--gold);
+    border-image-slice: 1;
+
+    animation-name: caster;
+    animation-duration: 1.5s;  
+    
+    display: inline-flex;
+    justify-content: flex-end;
+    
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+  }
+  .score {    
+    width: 125px;
+    height: 75px;
+    margin: 0px;
+    
+    animation-name: score;
+    animation-duration: 1.5s;  
+    background: linear-gradient(rgba(72,72,72,0.9),rgba(35,35,35,0.9));
+}
+  .extension {
+    width: 50px;
+    animation-name: extension;
+    animation-duration: 3s;  
+    position: absolute;
+    display: inline-flex;
+  }
+  .logo {
+    display: inline-flex;
+    --width: 100px;
+    width: var(--width);
+    --height: 45px;  
+    height: var(--height);
+  
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  
+    background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
+    box-shadow: inset 0px 0px 10px #000;
+  }
+  .type {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+
+    display: inline-flex;
+    
+    width: 350px;
+    height: 100%; 
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+  }
+  .small {    
+    font-size: 26px;    
+    margin-left: 10px;    
+  }
+  .large {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 32px;    
+    width: 50px;
+  }
+  
+  .round {
+    margin-left: 10px;
+    width: 250px;
+    height: 45px;
+    position: absolute;
+    transform: skew(-35deg);   
+    border-width: 0 10px 0 0;
+    animation-name: round;
+    animation-duration: 1.5s;  
+    clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
+  }
+  .round-left {    
+    transform: skew(35deg); 
+    border-width: 0 0 0 10px;
+    justify-content: flex-start;
+    clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
+  }
+  
+  
+  
+
+  @keyframes caster {
+    0%, 25%   {
+      width: 0px;
+      height: 0px;
+    }
+    50%   {
+      width: 0px;
+      height: 45px;
+    }
+    100%   {
+      width: 450px;
+      height: 45px;
+    }
+  }
+  @keyframes round {
+    0%, 50%   {
+      height: 0px;
+    }
+    100%   {
+      height: 45px;
+    }
+  }
+
+  @keyframes extension {
+    0%, 25%   {
+      width: 0px;
+      height: 0px;
+    }
+    50%   {
+      width: 0px;
+      height: 45px;
+    }
+    75%, 100%   {
+      width: 50px;
+      height: 45px;
+    }
+  }
+
+@keyframes score {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 75px;
+  }
+  100%   {
+    width: 125px;
+    height: 75px;
+  }
+}
