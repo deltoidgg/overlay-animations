@@ -5,6 +5,7 @@
   --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
   --red: linear-gradient(#ed1b24, #aa1d23);
   --yellow: #eab600;
+  --green: #00f473;
 }
 
 .container {
@@ -89,15 +90,15 @@
 }
 
 .team {
-  color: var(--yellow); 
-  background: linear-gradient(to right,#04a9f5,#00f473);
-
-    background-clip: padding-box;
--webkit-background-clip: text;
-
--webkit-text-fill-color: transparent;
+  color: var(--green); 
   font-style: italic;
   padding-right: 10px;
+}
+.text-gradient {
+  background: linear-gradient(to right,#04a9f5,#00f473);
+  background-clip: padding-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .logo {

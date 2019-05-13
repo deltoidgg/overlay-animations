@@ -67,8 +67,11 @@
     align-items: center;
     color: #fff; 
   }
+  .team {
+    color: var(--yellow); 
+  }
   .small {    
-    font-size: 26px;    
+    font-size: 20px;    
     margin-left: 10px;    
   }
   .large {
@@ -76,27 +79,23 @@
     font-size: 32px;    
     width: 50px;
   }
-  
   .round {
     margin-left: 10px;
-    width: 250px;
+    width: 190px;
     height: 45px;
     position: absolute;
-    transform: skew(-35deg);   
     border-width: 0 10px 0 0;
     animation-name: round;
     animation-duration: 1.5s;  
-    clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
+    clip-path: polygon(0px 0, 40px 45px, 210px 45px, 210px 0);
+    box-shadow: none;
   }
   .round-left {    
     transform: skew(35deg); 
     border-width: 0 0 0 10px;
     justify-content: flex-start;
-    clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
+    clip-path: polygon(0 0, 0 45px, 10px 45px, 32px 0);
   }
-  
-  
-  
 
   @keyframes caster {
     0%, 25%   {
