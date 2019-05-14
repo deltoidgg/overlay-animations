@@ -76,17 +76,18 @@
 
   justify-content: center;
   align-items: center;
-  color: #fff; 
+  color: rgba(255, 255, 255, 0.8); 
 }
 
 .small {    
-  font-size: 26px;    
+  font-size: 24px;    
   margin-left: 10px;    
 }
 .large {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36px;    
   width: 60px;
+  color: rgba(255, 255, 255, 1); 
 }
 
 .team {
@@ -163,6 +164,10 @@
 
 .first { 
   position: absolute;
+  height: 45px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
   animation: first 20s 0s infinite;
 }
 .second {
