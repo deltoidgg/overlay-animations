@@ -4,12 +4,12 @@ Animated stream overlays built with HTML/CSS/JS, providing compatibility with OB
 # Usage
 Drag the intended files into your scene display, or load the desired html file into OBS as a Browser source by selecting the local file. Width/height will need to be specified per file. You can set positions in OBS by right clicking the source, going to `transform` > `edit transform`.
 
-## Default
-Name bars: `deafult/players.html` with `width 1540, height 55` set position `x: 190, y: 36` (based on 1080p)
+### Default
+Name/Score: `default/players.html` with `width 1540, height 55` set position `x: 190, y: 36` (based on 1080p)
 
-Round/First To: `deafult/round.html` with `width 300, height 55` set position `x: 810, y: -14` (based on 1080p)
+Round/First To: `default/round.html` with `width 300, height 55` set position `x: 810, y: -14` (based on 1080p)
 
-## TNT
+### TNT
 caster overlay: `width 350, height 55`
 
 logo overlay: `width 770, height 170`
