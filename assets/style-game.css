@@ -3,7 +3,7 @@
   --gold: linear-gradient(to bottom, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
   --silver: linear-gradient(to bottom, #c4c4c4, #ffffff, #b4b4b4, #ffffff, #afafaf);
   --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
-  --red: linear-gradient(#ed1b24, #aa1d23);
+  --red: linear-gradient(to bottom, #bf3f3f, #fcbaba, #b32828, #fbb7b7, #aa1c1c);
   --yellow: #eab600;
   --green: #00f473;
 }
@@ -54,8 +54,21 @@
   justify-content: flex-start;
   clip-path: polygon(0 0, 0 45px, 100px 45px, 100px 0);
 }
-.extension {
+.extensionL {
+  z-index: 1;
   width: 60px;
+  border-image: var(--gold);
+  border-image-slice: 1;
+  animation-name: extension;
+  animation-duration: 3s;  
+  background: url('../assets/bg.png');
+  position: absolute;
+}
+.extensionR {
+  z-index: 1;
+  width: 60px;
+  border-image: var(--gold);
+  border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
   background: url('../assets/bg.png');
@@ -91,7 +104,7 @@
 }
 
 .team {
-  color: var(--green); 
+  color: var(--yellow); 
   font-style: italic;
   padding-right: 10px;
 }
@@ -122,13 +135,13 @@
 }
 
 .image {  
-  max-width: calc(1.2*var(--width));
+  max-width: calc(1.1*var(--width));
   max-height: calc(0.7*var(--height));  
 }
 
 .flag {  
-  width: calc(1*var(--width));
-  height: calc(1.1*var(--height));
+  width: calc(1.20*var(--width));
+  height: var(--height);
   box-shadow: inset 0px 0px 10px #000;  
   background-size: 100% 100% !important ;
   position: absolute;
