@@ -2,8 +2,14 @@
 Animated stream overlays built with HTML/CSS/JS, providing compatibility with OBS (Open Broadcast Software) and XSplit, created for usage by East London Fighters. The overlay titles pull their data from the XML file in /assets, which can be updated with StreamControl. 
 
 # Usage
-Drag the intended files into your scene display, or load the desired html file into OBS as a Browser source by selecting the local file. Width/height will need to be specified per file.
+Drag the intended files into your scene display, or load the desired html file into OBS as a Browser source by selecting the local file. Width/height will need to be specified per file. You can set positions in OBS by right clicking the source, going to `transform` > `edit transform`.
 
+## Default
+Name bars: `players.html` with `width 1540, height 55` set position `x: 190, y: 36` (based on 1080p)
+
+Name bars: `players.html` with `width 300, height 55` set position `x: 810, y: -14` (based on 1080p)
+
+## TNT
 caster overlay: `width 350, height 55`
 
 logo overlay: `width 770, height 170`
