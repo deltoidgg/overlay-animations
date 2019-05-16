@@ -10,17 +10,15 @@ Name/Score: `default/players.html` with `width 1540, height 55` set position `x:
 Round/First To: `default/round.html` with `width 300, height 55` set position `x: 810, y: -14` (based on 1080p)
 
 ### TNT
-caster overlay: `width 350, height 55`
+Caster names: `TNT/caster1.html` (left) and `TNT/caster2.html` (right) with `width: 350, height: 55`
 
-logo overlay: `width 770, height 170`
+Sponsor logos: `TNT/logo1.html` (left) and `TNT/logo2.html` (right) with `width: 770, height: 170`
 
-player overlay: `width 500, height 45`
+Player namebar: `TNT/player1.html` (left) and `TNT/player2.html` (right) with `width: 500, height: 45`
 
-player-combined overlay: `width 500, height 45`
+Score box: `TNT/score1.html` (left) and `TNT/score2.html` (right) with `width: 175, height: 75`
 
-score overlay: `width 175, height 75`
-
-round overlay: `width 210, height 45`
+Round/First To: `TNT/round.html` with `width: 210, height: 45`
 
 Tick the 'Refresh browser when scene becomes active' option to force animation load on scene switch.
 
