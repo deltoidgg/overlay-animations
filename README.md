@@ -4,6 +4,8 @@ Animated stream overlays built with HTML/CSS/JS, providing compatibility with OB
 # Usage
 Drag the intended files into your scene display, or load the desired html file into OBS as a Browser source by selecting the local file. Width/height will need to be specified per file. You can set positions in OBS by right clicking the source, going to `transform` > `edit transform`.
 
+Tick the 'Refresh browser when scene becomes active' option to force animation load on scene switch.
+
 ### Default
 Name/Score: `default/players.html` with `width 1540, height 55` set position `x: 190, y: 36` (based on 1080p)
 
@@ -14,13 +16,11 @@ Caster names: `TNT/caster1.html` (left) and `TNT/caster2.html` (right) with `wid
 
 Sponsor logos: `TNT/logo1.html` (left) and `TNT/logo2.html` (right) with `width: 770, height: 170`
 
-Player namebar: `TNT/player1.html` (left) and `TNT/player2.html` (right) with `width: 500, height: 45`
+Player namebar: `TNT/player1.html` (left) and `TNT/player2.html` (right) with `width: 510, height: 45`
 
-Score box: `TNT/score1.html` (left) and `TNT/score2.html` (right) with `width: 175, height: 75`
+Score box: `TNT/score1.html` (left) and `TNT/score2.html` (right) with `width: 200, height: 75`
 
-Round/First To: `TNT/round.html` with `width: 210, height: 45`
-
-Tick the 'Refresh browser when scene becomes active' option to force animation load on scene switch.
+Round/First To: `TNT/round.html` with `width: 232, height: 45`
 
 # Adding players & teams
 To add players you'll need to edit them into the players.csv file with their team information. Functionality is coming soon to be able to easily add support for team logos. Note that the team column needs to have a value or you'll get a bug on the name bar. If the player has no team, then just enter `-` like you should see for other players.
