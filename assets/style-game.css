@@ -4,8 +4,8 @@
   --silver: linear-gradient(to bottom, #c4c4c4, #ffffff, #b4b4b4, #ffffff, #afafaf);
   --black: linear-gradient(to bottom, #181818, #4b4b4b, #1d1d1d, #515151, #1a1a1a);
   --red: linear-gradient(to bottom, #bf3f3f, #fcbaba, #b32828, #fbb7b7, #aa1c1c);
-  --yellow: #eab600;
-  --green: #00f473;
+  --yellow: linear-gradient(to right,#eab600,#eab600);
+ --green: linear-gradient(to right,#04a9f5,#00f473);
 }
 
 .container {
@@ -18,7 +18,7 @@
   height: 45px;
   margin: 0px;
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-  background: url('../assets/backgrounds/black_textured.png');
+  /* background: url('../assets/backgrounds/black_textured.png'); */
   background-size: 500px 50px;
   overflow: hidden;
   position: relative;
@@ -105,15 +105,12 @@
 }
 
 .team {
-  color: var(--yellow); 
-  font-style: italic;
-  padding-right: 10px;
-}
-.text-gradient {
-  background: linear-gradient(to right,#04a9f5,#00f473);
+  background: var(--yellow);
   background-clip: padding-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+  font-style: italic;
+  padding-right: 10px;
 }
 
 .logo {
