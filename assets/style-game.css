@@ -58,21 +58,21 @@
 .extensionL {
   z-index: 1;
   width: 60px;
-  border-image: var(--gold);
+  border-image: var(--red);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  background: url('../assets/backgrounds/black_textured.png');
+  /* background: url('../assets/backgrounds/black_textured.png'); */
   position: absolute;
 }
 .extensionR {
   z-index: 1;
   width: 60px;
-  border-image: var(--gold);
+  border-image: var(--blue);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  background: url('../assets/backgrounds/black_textured.png');
+  /* background: url('../assets/backgrounds/black_textured.png'); */
   position: absolute;
 }
 

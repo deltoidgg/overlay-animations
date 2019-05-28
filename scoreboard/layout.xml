@@ -55,12 +55,17 @@
  </tab>
  <tab name="ID">
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>
-  <label x="10" y="44" width="125" height="13">Player 2 ID [ Do not edit ]</label>
+  <label x="10" y="44" width="125" height="13">P1 Team [ Do not edit ]</label>
+  <label x="10" y="74" width="125" height="13">P1 Country [ Do not edit ]</label>
   <lineEdit id="p1id" x="140" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player1" />
-  <lineEdit id="p2id" x="140" y="40" width="50" height="20" dataSet="players.csv" dataField="1" master="player2" />
-  <label x="210" y="14" width="125" height="13">P1 Team [ Do not edit ]</label>
+  <lineEdit id="p1team" x="140" y="40" width="50" height="20" dataSet="players.csv" dataField="3" master="player1" />
+  <lineEdit id="p1country" x="140" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player1" />
+  <label x="210" y="14" width="125" height="13">Player 2 ID [ Do not edit ]</label>
   <label x="210" y="44" width="125" height="13">P2 Team [ Do not edit ]</label>
-  <lineEdit id="p1team" x="330" y="10" width="50" height="20" dataSet="players.csv" dataField="3" master="player1" />
-  <lineEdit id="p2team" x="330" y="40" width="50" height="20" dataSet="players.csv" dataField="3" master="player2" />
+  <label x="210" y="74" width="125" height="13">P2 Country [ Do not edit ]</label>
+  <lineEdit id="p2id" x="340" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player2" />
+  <lineEdit id="p2team" x="340" y="40" width="50" height="20" dataSet="players.csv" dataField="3" master="player2" />
+  <lineEdit id="p2country" x="340" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player2" />
+  
  </tab>
 </layout>

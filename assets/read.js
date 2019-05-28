@@ -16,7 +16,7 @@ var logo;
 // logo = "teams/" + idFromServer + ".png"
 
 var xmlDoc = xml.responseXML;
-var player1="", player2="", caster1="", caster2="", p1score="", p2score="", p1team="", p2team="", round="", bestof="";
+var player1="", player2="", caster1="", caster2="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="";
 var p=["","","",""];
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
@@ -28,6 +28,8 @@ for (i = 0; i <x.length; i++) {
   p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
   p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
   p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  p1country += x[i].getElementsByTagName("p1country")[0].childNodes[0].nodeValue;
+  p2country += x[i].getElementsByTagName("p2country")[0].childNodes[0].nodeValue;
   round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
   bestof += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
   
@@ -36,6 +38,9 @@ for (i = 0; i <x.length; i++) {
   p[2] += x[i].getElementsByTagName("p2L")[0].childNodes[0].nodeValue;
   p[3] += x[i].getElementsByTagName("p2W")[0].childNodes[0].nodeValue;
   }  
+
+  p1country = "background: url(../assets/flags/" + p1country + ".png);";
+  p2country = "background: url(../assets/flags/" + p2country + ".png);";
 
   if (p[0] == 1) {
     player1 += ' (L)';
@@ -146,6 +151,8 @@ for (i = 0; i <x.length; i++) {
     document.getElementById("player2").innerHTML = player2;
     document.getElementById("p1team").innerHTML = p1team;
     document.getElementById("p2team").innerHTML = p2team;
+    document.getElementById("p1country").style = p1country;
+    document.getElementById("p2country").style = p2country;
     document.getElementById("p1score").innerHTML = p1score;
     document.getElementById("p2score").innerHTML = p2score;
     document.getElementById("p1logo").src = p1logo;

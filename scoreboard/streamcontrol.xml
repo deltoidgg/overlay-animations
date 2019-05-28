@@ -1,6 +1,6 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1557796931</timestamp>
+ <timestamp>1559066779</timestamp>
  <bestof>2</bestof>
  <caster1>PunLife</caster1>
  <caster2>TEMPHUiBIS</caster2>
@@ -8,11 +8,13 @@
  <mText2></mText2>
  <p1L>0</p1L>
  <p1W>0</p1W>
+ <p1country>GB</p1country>
  <p1id>0002</p1id>
  <p1score>2</p1score>
  <p1team>RIZE</p1team>
  <p2L>0</p2L>
  <p2W>0</p2W>
+ <p2country>IE</p2country>
  <p2id>0001</p2id>
  <p2score>1</p2score>
  <p2team>200K</p2team>
