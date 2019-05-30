@@ -25,7 +25,7 @@
   
   border-style: solid;
   border-width: 0 10px 0 10px;
-  border-image: var(--black);
+  border-image: var(--gold);
   border-image-slice: 1;
 
   animation-name: caster;
@@ -58,7 +58,7 @@
 .extensionL {
   z-index: 1;
   width: 60px;
-  border-image: var(--red);
+  border-image: var(--gold);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
@@ -68,7 +68,7 @@
 .extensionR {
   z-index: 1;
   width: 60px;
-  border-image: var(--blue);
+  border-image: var(--gold);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
