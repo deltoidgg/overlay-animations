@@ -80,6 +80,9 @@ for (i = 0; i <x.length; i++) {
     case 'NJT':
       p1logo = "../assets/teams/nijota.png"
     break;
+    case 'VIT':
+      p1logo = "../assets/teams/vit.png"
+    break;
     case 'Harriers':
       p1logo = "../assets/teams/harriers.png"
       break;
