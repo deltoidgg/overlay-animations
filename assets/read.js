@@ -1,3 +1,4 @@
+// Read XML file
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && ((location.protocol.indexOf('http') >= 0 && this.status == 200)) || location.protocol.indexOf('file') >= 0) {        
@@ -7,17 +8,14 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "../scoreboard/streamcontrol.xml", true);
 xhttp.send();
 
+
 function myFunction(xml) {
 var i;
-var logo;
-
-// get(teamFromServer && idFromServer)
-// team = teamFromServer
-// logo = "teams/" + idFromServer + ".png"
-
 var xmlDoc = xml.responseXML;
 var player1="", player2="", caster1="", caster2="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="";
 var p=["","","",""];
+
+// Loop to get data from XML and place in respective variable
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
   player1 += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
@@ -39,9 +37,12 @@ for (i = 0; i <x.length; i++) {
   p[3] += x[i].getElementsByTagName("p2W")[0].childNodes[0].nodeValue;
   }  
 
+  // Ammending URL for HTML insertion
   p1country = "background: url(../assets/flags/" + p1country + ".png);";
   p2country = "background: url(../assets/flags/" + p2country + ".png);";
 
+
+  // Adding on Winner Bracket status based on checkbox values
   if (p[0] == 1) {
     player1 += ' (L)';
   }
@@ -55,6 +56,7 @@ for (i = 0; i <x.length; i++) {
     player2 += ' (W)';
   }
 
+  // Assigning team url affix based on team 1 value
   switch (p1team) {
     case 'ELF | TKC':
     case 'DS | ELF':
@@ -89,7 +91,7 @@ for (i = 0; i <x.length; i++) {
     default:
       p1logo = "../assets/teams/default.png";
   }
-
+  // Repeated for team 2, consider refactor 
   switch (p2team) {
     case 'ELF | TKC':
     case 'DS | ELF':
@@ -122,6 +124,7 @@ for (i = 0; i <x.length; i++) {
     p2logo = "../assets/teams/default.png";
   }
   
+  // Assigning variables to HTML IDs based on n value
   switch (n) {
     case 0:
     document.getElementById("player1").innerHTML = player1;    
