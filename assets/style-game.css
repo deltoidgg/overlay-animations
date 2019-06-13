@@ -127,9 +127,39 @@
   align-items: center;
   color: rgba(255, 255, 255, 0.8); 
 }
+.name-type {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+
+  display: inline-flex;
+  
+  width: 300px;
+  height: 100%; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1); 
+}
+.twitter-type {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  display: inline-flex;
+  
+  width: 225px;
+  height: 100%; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7); 
+}
 
 .small {    
-  font-size: 24px;    
+  font-size: 20px;    
   margin-left: 10px;    
 }
 .large {

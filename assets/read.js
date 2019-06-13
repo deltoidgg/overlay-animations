@@ -12,7 +12,7 @@ xhttp.send();
 function myFunction(xml) {
 var i;
 var xmlDoc = xml.responseXML;
-var player1="", player2="", caster1="", caster2="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="";
+var player1="", player2="", caster1="", caster2="", twitter1="", twitter2="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="";
 var p=["","","",""];
 
 // Loop to get data from XML and place in respective variable
@@ -22,6 +22,8 @@ for (i = 0; i <x.length; i++) {
   player2 += x[i].getElementsByTagName("player2")[0].childNodes[0].nodeValue;
   caster1 += x[i].getElementsByTagName("caster1")[0].childNodes[0].nodeValue;
   caster2 += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
+  twitter1 += x[i].getElementsByTagName("twitter1")[0].childNodes[0].nodeValue;
+  twitter2 += x[i].getElementsByTagName("twitter2")[0].childNodes[0].nodeValue;
   p1score += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
   p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
   p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
@@ -138,9 +140,11 @@ for (i = 0; i <x.length; i++) {
       break;
     case 2:
       document.getElementById("caster1").innerHTML = caster1;
+      document.getElementById("twitter1").innerHTML = twitter1;
       break;
     case 3:
     document.getElementById("caster2").innerHTML = caster2;
+    document.getElementById("twitter2").innerHTML = twitter2;
       break;
     case 4:
     document.getElementById("p1score").innerHTML = p1score;
