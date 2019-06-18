@@ -18,7 +18,7 @@
   height: 45px;
   margin: 0px;
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-  /* background: url('../assets/backgrounds/black_textured.png'); */
+  /* background: url('../assets/layout/black_textured.png'); */
   background-size: 500px 50px;
   overflow: hidden;
   position: relative;
@@ -56,7 +56,7 @@
     width: 300px;
     height: 45px;
     background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-    /* background: url('../assets/backgrounds/black_textured.png'); */
+    /* background: url('../assets/layout/black_textured.png'); */
     background-size: 500px 50px;
     
   animation-name: caster;
@@ -64,10 +64,11 @@
 }
 .twitter {
   width: 225px;
-  height: 40px;
-  margin-left: 113px;
-  background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.7));
-  /* background: url('../assets/backgrounds/black_textured.png'); */
+  height: 35px;
+  margin-left: 111px;
+  background: linear-gradient(rgba(255,255,255,1),rgba(255, 242, 242, 0.7));
+  /* background: var(--silver); */
+  /* background: url('../assets/layout/black_textured.png'); */
   background-size: 500px 50px;
   
   animation-name: twitter;
@@ -97,7 +98,7 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  /* background: url('../assets/backgrounds/black_textured.png'); */
+  /* background: url('../assets/layout/black_textured.png'); */
   position: absolute;
 }
 .extensionR {
@@ -107,13 +108,14 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  /* background: url('../assets/backgrounds/black_textured.png'); */
+  /* background: url('../assets/layout/black_textured.png'); */
   position: absolute;
 }
 
 .type {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 32px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -130,12 +132,13 @@
 .name-type {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 32px;
+  font-weight: 700;
   letter-spacing: 1px;
 
   display: inline-flex;
   
   width: 300px;
-  height: 100%; 
+  height: 45px; 
   white-space: nowrap;
 
   justify-content: center;
@@ -144,27 +147,30 @@
 }
 .twitter-type {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 1px;
 
   display: inline-flex;
   
   width: 225px;
-  height: 100%; 
+  height: 35px; 
   white-space: nowrap;
 
   justify-content: center;
   align-items: center;
-  color: rgba(0, 0, 0, 0.7); 
+  color: rgb(32, 32, 32); 
 }
 
 .small {    
   font-size: 20px;    
+  font-weight: 700;
   margin-left: 10px;    
 }
 .large {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36px;    
+  font-weight: 700;
   width: 60px;
   color: rgba(255, 255, 255, 1); 
 }
@@ -285,11 +291,11 @@
   }
   50%   {
     width: 0px;
-    height: 40px;
+    height: 35px;
   }
   100%   {
     width: 225px;
-    height: 40px;
+    height: 35px;
   }
 }
   @keyframes round {
