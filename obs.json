@@ -42,7 +42,7 @@
         "id": "wasapi_output_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": true,
+        "muted": false,
         "name": "Desktop Audio",
         "private_settings": {},
         "push-to-mute": false,
@@ -55,8 +55,8 @@
         "sync": 0,
         "volume": 0.91267293691635132
     },
-    "current_program_scene": "Finish",
-    "current_scene": "Finish",
+    "current_program_scene": "Casters",
+    "current_scene": "Casters",
     "current_transition": "Stinger",
     "groups": [
         {
@@ -65,25 +65,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "libobs.hide_scene_item.Caster 1 html": [],
-                "libobs.hide_scene_item.Caster 2 html": [],
-                "libobs.hide_scene_item.Discord 1": [],
-                "libobs.hide_scene_item.Discord 2": [],
-                "libobs.hide_scene_item.border L": [],
-                "libobs.hide_scene_item.border R": [],
-                "libobs.show_scene_item.Caster 1 html": [],
-                "libobs.show_scene_item.Caster 2 html": [],
-                "libobs.show_scene_item.Discord 1": [],
-                "libobs.show_scene_item.Discord 2": [],
-                "libobs.show_scene_item.border L": [],
-                "libobs.show_scene_item.border R": []
-            },
+            "hotkeys": {},
             "id": "group",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "caster feed",
+            "name": "logos",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -91,8 +78,152 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": true,
-                "cx": 1868,
-                "cy": 517,
+                "cx": 1261,
+                "cy": 981,
+                "id_counter": 0,
+                "items": [
+                    {
+                        "align": 4,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 42,
+                        "locked": true,
+                        "name": "TNT logo.png",
+                        "pos": {
+                            "x": 652.0,
+                            "y": 803.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.12590974569320679,
+                            "y": 0.12588401138782501
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 61,
+                        "locked": true,
+                        "name": "dragonslay.png",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 35.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.43999999761581421,
+                            "y": 0.44186046719551086
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 63,
+                        "locked": true,
+                        "name": "madhouse.png",
+                        "pos": {
+                            "x": 1033.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.51818180084228516,
+                            "y": 0.51898735761642456
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 64,
+                        "locked": true,
+                        "name": "gtomega.png",
+                        "pos": {
+                            "x": 511.0,
+                            "y": 26.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.51031893491744995,
+                            "y": 0.51063829660415649
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "group",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "large UI",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": true,
+                "cx": 1920,
+                "cy": 121,
                 "id_counter": 0,
                 "items": [
                     {
@@ -108,9 +239,193 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 50,
+                        "id": 12,
                         "locked": true,
-                        "name": "border L",
+                        "name": "player 1",
+                        "pos": {
+                            "x": 172.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 13,
+                        "locked": true,
+                        "name": "player 2",
+                        "pos": {
+                            "x": 1243.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 14,
+                        "locked": true,
+                        "name": "score 1",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 46.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 15,
+                        "locked": true,
+                        "name": "score 2",
+                        "pos": {
+                            "x": 1720.0,
+                            "y": 46.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 4,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 17,
+                        "locked": true,
+                        "name": "round 1",
+                        "pos": {
+                            "x": 960.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.hide_scene_item.Discord 1": [],
+                "libobs.hide_scene_item.Discord 2": [],
+                "libobs.hide_scene_item.border.png": [],
+                "libobs.hide_scene_item.caster1.html": [],
+                "libobs.hide_scene_item.caster2.html": [],
+                "libobs.show_scene_item.Discord 1": [],
+                "libobs.show_scene_item.Discord 2": [],
+                "libobs.show_scene_item.border.png": [],
+                "libobs.show_scene_item.caster1.html": [],
+                "libobs.show_scene_item.caster2.html": []
+            },
+            "id": "group",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "caster feed",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": true,
+                "cx": 1921,
+                "cy": 544,
+                "id_counter": 0,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 65,
+                        "locked": true,
+                        "name": "border.png",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -127,37 +442,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 51,
-                        "locked": true,
-                        "name": "border R",
-                        "pos": {
-                            "x": 950.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 912.0,
-                            "y": 511.0
+                            "x": 957.0,
+                            "y": 538.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
@@ -170,46 +456,46 @@
                         "locked": true,
                         "name": "Discord 1",
                         "pos": {
-                            "x": 3.0,
-                            "y": 3.5
+                            "x": 0.0,
+                            "y": 3.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.47398543357849121,
-                            "y": 0.47166666388511658
+                            "x": 0.47398540377616882,
+                            "y": 0.47166669368743896
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 912.0,
-                            "y": 511.0
+                            "x": 957.0,
+                            "y": 538.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
                         "crop_bottom": 610,
-                        "crop_left": 855,
-                        "crop_right": 550,
+                        "crop_left": 1200,
+                        "crop_right": 300,
                         "crop_top": 180,
                         "group_item_backup": false,
                         "id": 48,
                         "locked": true,
                         "name": "Discord 2",
                         "pos": {
-                            "x": 953.0,
-                            "y": 3.5
+                            "x": 964.0,
+                            "y": 3.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.47398543357849121,
-                            "y": 0.47166666388511658
+                            "x": 0.47398540377616882,
+                            "y": 0.47166669368743896
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -224,12 +510,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 43,
+                        "id": 66,
                         "locked": true,
-                        "name": "Caster 1 html",
+                        "name": "caster1.html",
                         "pos": {
-                            "x": 565.0,
-                            "y": 388.5
+                            "x": 23.0,
+                            "y": 432.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -243,8 +529,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -253,12 +539,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 36,
+                        "id": 67,
                         "locked": true,
-                        "name": "Caster 2 html",
+                        "name": "caster2.html",
                         "pos": {
-                            "x": 953.0,
-                            "y": 388.5
+                            "x": 1000.0,
+                            "y": 432.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -281,7 +567,12 @@
             "interval": 300,
             "non_matching_scene": "",
             "switch_if_not_matching": false,
-            "switches": []
+            "switches": [
+                {
+                    "scene": "Starting",
+                    "window_title": "Home / Twitter - Mozilla Firefox"
+                }
+            ]
         },
         "captions": {
             "enabled": false,
@@ -349,22 +640,96 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
+            "hotkeys": {
+                "MediaSource.Restart": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
             "monitoring_type": 0,
             "muted": false,
-            "name": "local-host test",
+            "name": "background",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "css": "body { margin: 0px auto; overflow: hidden; }",
-                "height": 45,
-                "url": "http://127.0.0.1:5500/TNT/player2.html",
-                "width": 500
+                "clear_on_media_end": true,
+                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/background.mp4",
+                "looping": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "gtomega.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/sponsors/gtomega.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "madhouse.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/sponsors/madhouse.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "dragonslay.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/sponsors/dragonslay.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -378,9 +743,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Tekken 1": [],
-                "libobs.hide_scene_item.bg": [],
-                "libobs.show_scene_item.Tekken 1": [],
-                "libobs.show_scene_item.bg": []
+                "libobs.show_scene_item.Tekken 1": []
             },
             "id": "scene",
             "mixers": 0,
@@ -396,35 +759,6 @@
                 "custom_size": false,
                 "id_counter": 2,
                 "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "bg",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.75,
-                            "y": 0.75
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -455,75 +789,6 @@
                         "visible": true
                     }
                 ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "border R",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/border.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "border L",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/border.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "bg.png",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/bg.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -601,7 +866,7 @@
                 "restart_when_active": true,
                 "shutdown": true,
                 "url": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/score2.html",
-                "width": 175
+                "width": 200
             },
             "sync": 0,
             "volume": 1.0
@@ -630,7 +895,7 @@
                 "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/score1.html",
                 "restart_when_active": true,
                 "shutdown": true,
-                "width": 175
+                "width": 200
             },
             "sync": 0,
             "volume": 1.0
@@ -659,7 +924,7 @@
                 "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/player2.html",
                 "restart_when_active": true,
                 "shutdown": true,
-                "width": 500
+                "width": 510
             },
             "sync": 0,
             "volume": 1.0
@@ -688,7 +953,7 @@
                 "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/player1.html",
                 "restart_when_active": true,
                 "shutdown": true,
-                "width": 500
+                "width": 550
             },
             "sync": 0,
             "volume": 1.0
@@ -735,31 +1000,6 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "matcherino 2",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "height": 40,
-                "url": "https://matcherino.com/overlay/sdonations/?id=14342",
-                "width": 400
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
             "name": "matcherino 1",
             "private_settings": {},
             "push-to-mute": false,
@@ -767,67 +1007,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "height": 100,
-                "url": "https://matcherino.com/tournaments/CLR/14760/overlays?minimalui=1",
+                "css": "body { \nbackground-color: rgba(0, 0, 0, 0);\n margin: 0px auto; \noverflow: hidden;\n }\nmno-clr-widget-cont{\nheight: 150px;\n}\n.inline-flex-row{\njustify-content: center\n}\n.mno-clr-widget-cont-bg{\nwidth: 400px;\nbackground: none;\nborder: none;\n}\n\n.front-feat-details-size{\nfont-size: 18px;\n}\n\n.clr-header-size{\nfont-size: 24px;\n}",
+                "height": 125,
+                "url": "https://matcherino.com/tournaments/CLR/16704/overlays?minimalui=1",
                 "width": 400
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "sponsor 1",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "body { margin: 0px auto; overflow: hidden; }",
-                "height": 150,
-                "is_local_file": true,
-                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/logo1.html",
-                "restart_when_active": true,
-                "shutdown": true,
-                "width": 750
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Caster 1 html",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "body { margin: 0px auto; overflow: hidden;}",
-                "height": 55,
-                "is_local_file": true,
-                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/caster1.html",
-                "restart_when_active": true,
-                "shutdown": true,
-                "width": 350
             },
             "sync": 0,
             "volume": 1.0
@@ -871,12 +1054,10 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Sparkle Blue.mp4 (2)": [],
-                "libobs.hide_scene_item.Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3": [],
+                "libobs.hide_scene_item.background": [],
                 "libobs.hide_scene_item.finish": [],
                 "libobs.hide_scene_item.tnt.png": [],
-                "libobs.show_scene_item.Sparkle Blue.mp4 (2)": [],
-                "libobs.show_scene_item.Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3": [],
+                "libobs.show_scene_item.background": [],
                 "libobs.show_scene_item.finish": [],
                 "libobs.show_scene_item.tnt.png": []
             },
@@ -892,7 +1073,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 7,
+                "id_counter": 8,
                 "items": [
                     {
                         "align": 5,
@@ -907,38 +1088,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 8,
                         "locked": true,
-                        "name": "Sparkle Blue.mp4 (2)",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.5,
-                            "y": 1.5
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3",
+                        "name": "background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1011,67 +1163,6 @@
                         "visible": true
                     }
                 ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "local_file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3",
-                "looping": false,
-                "restart_on_activate": false
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Sparkle Blue.mp4 (2)",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "local_file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/Sparkle Blue.mp4",
-                "looping": true
             },
             "sync": 0,
             "volume": 1.0
@@ -1156,37 +1247,6 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
-                "MediaSource.Restart": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Sparkle Blue.mp4",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "local_file": "C:/Users/wasim/Desktop/Streaming/TNT Resource Pack/Sparkle Blue.mp4",
-                "looping": true,
-                "speed_percent": 100
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Monitor 2": [],
                 "libobs.show_scene_item.Monitor 2": []
@@ -1247,22 +1307,28 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Sparkle Blue.mp4": [],
                 "libobs.hide_scene_item.TNT logo.png": [],
-                "libobs.hide_scene_item.bg.png": [],
+                "libobs.hide_scene_item.ad.png": [],
+                "libobs.hide_scene_item.ads.png": [],
+                "libobs.hide_scene_item.ads.png (2)": [],
+                "libobs.hide_scene_item.background": [],
                 "libobs.hide_scene_item.caster feed": [],
+                "libobs.hide_scene_item.dragonslay.png": [],
+                "libobs.hide_scene_item.gtomega.png": [],
+                "libobs.hide_scene_item.logos": [],
+                "libobs.hide_scene_item.madhouse.png": [],
                 "libobs.hide_scene_item.matcherino 1": [],
-                "libobs.hide_scene_item.matcherino 2": [],
-                "libobs.hide_scene_item.sponsor 1": [],
-                "libobs.hide_scene_item.sponsor 2": [],
-                "libobs.show_scene_item.Sparkle Blue.mp4": [],
                 "libobs.show_scene_item.TNT logo.png": [],
-                "libobs.show_scene_item.bg.png": [],
+                "libobs.show_scene_item.ad.png": [],
+                "libobs.show_scene_item.ads.png": [],
+                "libobs.show_scene_item.ads.png (2)": [],
+                "libobs.show_scene_item.background": [],
                 "libobs.show_scene_item.caster feed": [],
-                "libobs.show_scene_item.matcherino 1": [],
-                "libobs.show_scene_item.matcherino 2": [],
-                "libobs.show_scene_item.sponsor 1": [],
-                "libobs.show_scene_item.sponsor 2": []
+                "libobs.show_scene_item.dragonslay.png": [],
+                "libobs.show_scene_item.gtomega.png": [],
+                "libobs.show_scene_item.logos": [],
+                "libobs.show_scene_item.madhouse.png": [],
+                "libobs.show_scene_item.matcherino 1": []
             },
             "id": "scene",
             "mixers": 0,
@@ -1276,7 +1342,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 53,
+                "id_counter": 73,
                 "items": [
                     {
                         "align": 5,
@@ -1291,38 +1357,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 11,
+                        "id": 72,
                         "locked": true,
-                        "name": "Sparkle Blue.mp4",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.5,
-                            "y": 1.5
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 49,
-                        "locked": true,
-                        "name": "bg.png",
+                        "name": "background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1339,8 +1376,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -1349,12 +1386,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": true,
-                        "id": 50,
+                        "id": 65,
                         "locked": true,
-                        "name": "border L",
+                        "name": "border.png",
                         "pos": {
-                            "x": 26.0,
-                            "y": 248.5
+                            "x": 0.0,
+                            "y": 185.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1368,37 +1405,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": true,
-                        "id": 51,
-                        "locked": true,
-                        "name": "border R",
-                        "pos": {
-                            "x": 976.0,
-                            "y": 248.5
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 912.0,
-                            "y": 511.0
+                            "x": 957.0,
+                            "y": 538.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
@@ -1411,46 +1419,46 @@
                         "locked": true,
                         "name": "Discord 1",
                         "pos": {
-                            "x": 29.0,
-                            "y": 252.0
+                            "x": 0.0,
+                            "y": 188.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.47398543357849121,
-                            "y": 0.47166666388511658
+                            "x": 0.47398540377616882,
+                            "y": 0.47166669368743896
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 912.0,
-                            "y": 511.0
+                            "x": 957.0,
+                            "y": 538.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 1,
                         "crop_bottom": 610,
-                        "crop_left": 855,
-                        "crop_right": 550,
+                        "crop_left": 1200,
+                        "crop_right": 300,
                         "crop_top": 180,
                         "group_item_backup": true,
                         "id": 48,
                         "locked": true,
                         "name": "Discord 2",
                         "pos": {
-                            "x": 979.0,
-                            "y": 252.0
+                            "x": 964.0,
+                            "y": 188.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.47398543357849121,
-                            "y": 0.47166666388511658
+                            "x": 0.47398540377616882,
+                            "y": 0.47166669368743896
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1465,12 +1473,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": true,
-                        "id": 43,
+                        "id": 66,
                         "locked": true,
-                        "name": "Caster 1 html",
+                        "name": "caster1.html",
                         "pos": {
-                            "x": 591.0,
-                            "y": 637.0
+                            "x": 23.0,
+                            "y": 617.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1484,8 +1492,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -1494,12 +1502,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": true,
-                        "id": 36,
+                        "id": 67,
                         "locked": true,
-                        "name": "Caster 2 html",
+                        "name": "caster2.html",
                         "pos": {
-                            "x": 979.0,
-                            "y": 637.0
+                            "x": 1000.0,
+                            "y": 617.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1527,8 +1535,8 @@
                         "locked": true,
                         "name": "caster feed",
                         "pos": {
-                            "x": 26.0,
-                            "y": 248.5
+                            "x": 0.0,
+                            "y": 185.0
                         },
                         "private_settings": {
                             "collapsed": true
@@ -1553,77 +1561,224 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 44,
-                        "locked": true,
-                        "name": "sponsor 1",
-                        "pos": {
-                            "x": 518.0,
-                            "y": 901.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 4,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 41,
-                        "locked": true,
-                        "name": "sponsor 2",
-                        "pos": {
-                            "x": 1410.0,
-                            "y": 901.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 4,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
+                        "group_item_backup": true,
                         "id": 42,
                         "locked": true,
                         "name": "TNT logo.png",
                         "pos": {
-                            "x": 959.5,
-                            "y": 808.0
+                            "x": 957.0,
+                            "y": 834.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.17103347182273865,
-                            "y": 0.17114569246768951
+                            "x": 0.12590974569320679,
+                            "y": 0.12588401138782501
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": true,
+                        "id": 61,
+                        "locked": true,
+                        "name": "dragonslay.png",
+                        "pos": {
+                            "x": 305.0,
+                            "y": 66.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.43999999761581421,
+                            "y": 0.44186046719551086
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": true,
+                        "id": 63,
+                        "locked": true,
+                        "name": "madhouse.png",
+                        "pos": {
+                            "x": 1338.0,
+                            "y": 31.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.51818180084228516,
+                            "y": 0.51898735761642456
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": true,
+                        "id": 64,
+                        "locked": true,
+                        "name": "gtomega.png",
+                        "pos": {
+                            "x": 816.0,
+                            "y": 57.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.51031893491744995,
+                            "y": 0.51063829660415649
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 73,
+                        "locked": true,
+                        "name": "logos",
+                        "pos": {
+                            "x": 305.0,
+                            "y": 31.0
+                        },
+                        "private_settings": {
+                            "collapsed": true
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 68,
+                        "locked": true,
+                        "name": "ads.png",
+                        "pos": {
+                            "x": 50.0,
+                            "y": 765.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 69,
+                        "locked": true,
+                        "name": "ad.png",
+                        "pos": {
+                            "x": 173.0,
+                            "y": 768.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.26458331942558289,
+                            "y": 0.2648148238658905
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 70,
+                        "locked": true,
+                        "name": "ads.png (2)",
+                        "pos": {
+                            "x": 1116.0,
+                            "y": 765.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1642,11 +1797,11 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 45,
-                        "locked": false,
+                        "locked": true,
                         "name": "matcherino 1",
                         "pos": {
-                            "x": 477.0,
-                            "y": 89.0
+                            "x": 1234.0,
+                            "y": 846.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1656,35 +1811,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 46,
-                        "locked": true,
-                        "name": "matcherino 2",
-                        "pos": {
-                            "x": 978.0,
-                            "y": 55.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.2999999523162842,
-                            "y": 1.2999999523162842
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
                     }
                 ]
             },
@@ -1700,23 +1826,23 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Tekken 1": [],
-                "libobs.hide_scene_item.bg": [],
-                "libobs.hide_scene_item.local-host test": [],
+                "libobs.hide_scene_item.large UI": [],
                 "libobs.hide_scene_item.logo": [],
-                "libobs.hide_scene_item.matcherino 1": [],
                 "libobs.hide_scene_item.player 1": [],
                 "libobs.hide_scene_item.player 2": [],
+                "libobs.hide_scene_item.players": [],
                 "libobs.hide_scene_item.round": [],
+                "libobs.hide_scene_item.round 1": [],
                 "libobs.hide_scene_item.score 1": [],
                 "libobs.hide_scene_item.score 2": [],
                 "libobs.show_scene_item.Tekken 1": [],
-                "libobs.show_scene_item.bg": [],
-                "libobs.show_scene_item.local-host test": [],
+                "libobs.show_scene_item.large UI": [],
                 "libobs.show_scene_item.logo": [],
-                "libobs.show_scene_item.matcherino 1": [],
                 "libobs.show_scene_item.player 1": [],
                 "libobs.show_scene_item.player 2": [],
+                "libobs.show_scene_item.players": [],
                 "libobs.show_scene_item.round": [],
+                "libobs.show_scene_item.round 1": [],
                 "libobs.show_scene_item.score 1": [],
                 "libobs.show_scene_item.score 2": []
             },
@@ -1734,37 +1860,8 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 20,
+                "id_counter": 41,
                 "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 10,
-                        "locked": true,
-                        "name": "bg",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.75,
-                            "y": 0.75
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -1806,7 +1903,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": false,
+                        "group_item_backup": true,
                         "id": 12,
                         "locked": true,
                         "name": "player 1",
@@ -1835,7 +1932,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": false,
+                        "group_item_backup": true,
                         "id": 13,
                         "locked": true,
                         "name": "player 2",
@@ -1855,8 +1952,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -1864,7 +1961,7 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": false,
+                        "group_item_backup": true,
                         "id": 14,
                         "locked": true,
                         "name": "score 1",
@@ -1893,12 +1990,12 @@
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
-                        "group_item_backup": false,
+                        "group_item_backup": true,
                         "id": 15,
                         "locked": true,
                         "name": "score 2",
                         "pos": {
-                            "x": 1745.0,
+                            "x": 1720.0,
                             "y": 132.0
                         },
                         "private_settings": {},
@@ -1909,6 +2006,66 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 4,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": true,
+                        "id": 17,
+                        "locked": true,
+                        "name": "round 1",
+                        "pos": {
+                            "x": 960.0,
+                            "y": 86.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 41,
+                        "locked": true,
+                        "name": "large UI",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 86.0
+                        },
+                        "private_settings": {
+                            "collapsed": true
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1942,35 +2099,6 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 11,
-                        "locked": true,
-                        "name": "matcherino 1",
-                        "pos": {
-                            "x": -20.0,
-                            "y": 961.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": false
-                    },
-                    {
-                        "align": 4,
-                        "bounds": {
                             "x": 1.0,
                             "y": 1.0
                         },
@@ -1981,12 +2109,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 17,
+                        "id": 39,
                         "locked": true,
                         "name": "round",
                         "pos": {
-                            "x": 960.0,
-                            "y": 86.0
+                            "x": 810.0,
+                            "y": -9.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -2000,8 +2128,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -2010,12 +2138,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 19,
+                        "id": 38,
                         "locked": true,
-                        "name": "local-host test",
+                        "name": "players",
                         "pos": {
-                            "x": 1245.0,
-                            "y": 131.0
+                            "x": 190.0,
+                            "y": 36.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -2024,7 +2152,7 @@
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     }
                 ]
             },
@@ -2086,37 +2214,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "bg",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/bg.jpg"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Sparkle Blue.mp4 (2)": [],
-                "libobs.hide_scene_item.Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3": [],
+                "libobs.hide_scene_item.background": [],
                 "libobs.hide_scene_item.countdown": [],
                 "libobs.hide_scene_item.tnt.png": [],
-                "libobs.show_scene_item.Sparkle Blue.mp4 (2)": [],
-                "libobs.show_scene_item.Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3": [],
+                "libobs.show_scene_item.background": [],
                 "libobs.show_scene_item.countdown": [],
                 "libobs.show_scene_item.tnt.png": []
             },
@@ -2132,7 +2235,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 6,
+                "id_counter": 7,
                 "items": [
                     {
                         "align": 5,
@@ -2147,9 +2250,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Sparkle Blue.mp4 (2)",
+                        "id": 7,
+                        "locked": false,
+                        "name": "background",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2157,8 +2260,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.5,
-                            "y": 1.5
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2179,35 +2282,6 @@
                         "id": 2,
                         "locked": true,
                         "name": "tnt.png",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Whispers Wonder” _ Japanese Trance  Progressive Mix (Harmonically Mixed).mp3",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -2262,66 +2336,6 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Caster 2 html",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "body { margin: 0px auto; overflow: hidden;}",
-                "fps": 30,
-                "fps_custom": false,
-                "height": 55,
-                "is_local_file": true,
-                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/caster2.html",
-                "restart_when_active": true,
-                "shutdown": true,
-                "width": 350
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "sponsor 2",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "body { margin: 0px auto; overflow: hidden;}",
-                "height": 150,
-                "is_local_file": true,
-                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/logo2.html",
-                "restart_when_active": true,
-                "shutdown": true,
-                "width": 770
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
@@ -2349,7 +2363,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "round",
+            "name": "round 1",
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2362,7 +2376,215 @@
                 "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/TNT/round.html",
                 "restart_when_active": true,
                 "shutdown": true,
-                "width": 230
+                "width": 232
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "players",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body { overflow: hidden; }",
+                "height": 75,
+                "is_local_file": true,
+                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/default/players.html",
+                "restart_when_active": true,
+                "shutdown": true,
+                "width": 1540
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "round",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body {overflow: hidden; }",
+                "height": 55,
+                "is_local_file": true,
+                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/default/round.html",
+                "restart_when_active": true,
+                "shutdown": true,
+                "width": 300
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "border.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/border.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "caster1.html",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body { overflow: hidden; }",
+                "height": 100,
+                "is_local_file": true,
+                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/default/caster1.html",
+                "restart_when_active": true,
+                "shutdown": true,
+                "width": 400
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "caster2.html",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body {overflow: hidden; }",
+                "height": 100,
+                "is_local_file": true,
+                "local_file": "C:/Users/wasim/Desktop/Git/overlay-animations/default/caster2.html",
+                "restart_when_active": true,
+                "shutdown": true,
+                "width": 400
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "ads.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/ads.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "ad.png",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/sponsors/ad.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "ads.png (2)",
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/wasim/Desktop/Git/overlay-animations/assets/layout/ads.png"
             },
             "sync": 0,
             "volume": 1.0
