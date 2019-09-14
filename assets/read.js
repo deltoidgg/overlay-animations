@@ -167,12 +167,20 @@ for (i = 0; i <x.length; i++) {
     document.getElementById("player2").innerHTML = player2;
     document.getElementById("p1team").innerHTML = p1team;
     document.getElementById("p2team").innerHTML = p2team;
-    document.getElementById("p1country").style = p1country;
-    document.getElementById("p2country").style = p2country;
     document.getElementById("p1score").innerHTML = p1score;
     document.getElementById("p2score").innerHTML = p2score;
-    document.getElementById("p1logo").src = p1logo;
-    document.getElementById("p2logo").src = p2logo;
     break;
+    case 8:
+      document.getElementById("player1").innerHTML = player1;
+      document.getElementById("player2").innerHTML = player2;
+      document.getElementById("p1team").innerHTML = p1team;
+      document.getElementById("p2team").innerHTML = p2team;
+      document.getElementById("p1country").style = p1country;
+      document.getElementById("p2country").style = p2country;
+      document.getElementById("p1score").innerHTML = p1score;
+      document.getElementById("p2score").innerHTML = p2score;
+      document.getElementById("p1logo").src = p1logo;
+      document.getElementById("p2logo").src = p2logo;
+      break;
   }
 }
