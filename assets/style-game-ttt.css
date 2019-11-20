@@ -18,7 +18,7 @@
   height: 45px;
   margin: 0px;
   background: linear-gradient(rgba(16,26,36,1),rgba(16,26,36,0.9));
-  /* background: url('../assets/layout/black_textured.png'); */
+  background: url('../TTT/bg1.png');
   background-size: 500px 50px;
   overflow: hidden;
   position: relative;
@@ -37,6 +37,13 @@
   
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
   /* box-shadow: 0 8px 8px -10px #000; */
+}
+.subshape {
+  width: 400px;
+  height: 45px;
+  margin: 0px;
+  animation-name: namebar;
+  animation-duration: 1.5s;  
 }
 
 .base {
@@ -121,7 +128,7 @@
 
   display: inline-flex;
   
-  width: 430px;
+  width: 525px;
   height: 100%; 
   white-space: nowrap;
 
@@ -180,7 +187,7 @@
   background-clip: padding-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-  font-style: italic;
+  /* font-style: italic; */
   padding-right: 10px;
 }
 

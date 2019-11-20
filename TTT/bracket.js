@@ -13,10 +13,18 @@ function myFunction(xml) {
 var i;
 var xmlDoc = xml.responseXML;
 var slot1="",score1="", slot2="", score2="", slot3="", score3="", slot4="", score4="", slot5="", score5="", slot6="", score6="", slot7="", score7="", slot8="", score8="", slot9="", score9="", slot10="", score10="", slot11="", score11="", slot12="", score12="", slot13="", score13="", slot14="", score14="";
-
+var player1="", player2="", p1score="", p2score="", p1team="", p2team="", round="", bestof="";
 // Loop to get data from XML and place in respective variable
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
+  player1 += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
+  player2 += x[i].getElementsByTagName("player2")[0].childNodes[0].nodeValue;
+  p1score += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
+  p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
+  p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
+  p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
+  bestof += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
     slot1 += x[i].getElementsByTagName("slot1")[0].childNodes[0].nodeValue;
     score1 += x[i].getElementsByTagName("score1")[0].childNodes[0].nodeValue;
     slot2 += x[i].getElementsByTagName("slot2")[0].childNodes[0].nodeValue;
@@ -80,5 +88,19 @@ for (i = 0; i <x.length; i++) {
     document.getElementById("slot14").innerHTML = slot14;    
     document.getElementById("score14").innerHTML = score14;
     break;
+    case 2:
+      document.getElementById("player1").innerHTML = player1;    
+      document.getElementById("player2").innerHTML = player2;
+        break;
+        case 3:   
+          document.getElementById("p1team").innerHTML = p1team;
+          document.getElementById("p1score").src = p1score;
+          document.getElementById("p2team").innerHTML = p2team;
+          document.getElementById("p2score").src = p2score;
+            break;
+            case 4:
+              document.getElementById("round").innerHTML = round;
+              document.getElementById("bestof").innerHTML = bestof;
+              break;
   }
 }

@@ -40,13 +40,7 @@ h2 {
     margin-bottom: 100px;
 }
 
-.score {
-    float: right;
-    margin-right: 20px;
-    color: #f9c322;
-    font-size: 24px;
-    font-weight: 700 !important;
-}
+
 
 .bracket .round {
     display: inline-block;
@@ -95,7 +89,7 @@ h2 {
 
 .bracket .round .winners > div.matchups .matchup .participants .participant span {
     margin-left: 1.25rem;
-    line-height: 2;
+    line-height: 50px;
     /* font-size: 1rem; */
     justify-content: center;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -103,6 +97,15 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     /* letter-spacing: 1px; */
+}
+
+.score {
+    font-family: 'edosz', sans-serif !important;
+    float: right;
+    margin-right: 20px;
+    color: #f9c322;
+    font-size: 32px !important;
+    /* font-weight: 700 !important; */
 }
 
 .bracket .round .winners > div.connector.filled .line, .bracket .round .winners > div.connector.filled.bottom .merger:after, .bracket .round .winners > div.connector.filled.top .merger:before {
