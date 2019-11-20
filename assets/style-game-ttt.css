@@ -17,15 +17,15 @@
   width: 525px;
   height: 45px;
   margin: 0px;
-  /* background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7)); */
-  background: url('../assets/layout/black_textured.png');
+  background: linear-gradient(rgba(16,26,36,1),rgba(16,26,36,0.9));
+  /* background: url('../assets/layout/black_textured.png'); */
   background-size: 500px 50px;
   overflow: hidden;
   position: relative;
   
   border-style: solid;
   border-width: 0 10px 0 10px;
-  border-image: var(--gold);
+  border-image: var(--black);
   border-image-slice: 1;
 
   animation-name: namebar;
@@ -94,7 +94,7 @@
 .extensionL {
   z-index: 1;
   width: 60px;
-  border-image: var(--silver);
+  border-image: var(--black);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
@@ -104,7 +104,7 @@
 .extensionR {
   z-index: 1;
   width: 60px;
-  border-image: var(--silver);
+  border-image: var(--black);
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
