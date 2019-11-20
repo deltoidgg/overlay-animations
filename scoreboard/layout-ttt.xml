@@ -3,34 +3,24 @@
 
  <tab name="Match Info">
 
-  <label x="10" y="15" width="46" height="13" dataSet="players.csv" dataField="3" >Team 1</label>
-  <label x="10" y="45" width="46" height="13" dataSet="players.csv" dataField="3" >Team 2</label>
+  <label x="10" y="15" width="46" height="13">Team 1</label>
+  <label x="10" y="45" width="46" height="13">Team 2</label>
   <label x="205" y="75" width="46" height="13">First to</label>
   <label x="10" y="75" width="46" height="13">Round</label>
-  <lineEdit id="player1" dataSet="players.csv" dataField="2" x="60" y="10" width="171" height="20">Name</lineEdit>
-  <lineEdit id="player2" dataSet="players.csv" dataField="2" x="60" y="40" width="171" height="20">Name</lineEdit>
-  <label x="300" y="15" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label>
-  <label x="300" y="45" width="46" height="13" dataSet="players.csv" dataField="2" >Player 2</label>
+  <lineEdit id="p1team" x="60" y="10" width="171" height="20" dataSet="players.csv" dataField="3" master="player1">Name</lineEdit>
+
+  <lineEdit id="p2team" dataSet="players.csv" dataField="3" x="60" y="40" width="171" height="20" master="player2">Name</lineEdit>
+  <label x="300" y="15" width="46" height="13">Player 1</label>
+  <label x="300" y="45" width="46" height="13">Player 2</label>
   <lineEdit id="player1" dataSet="players.csv" dataField="2" x="350" y="10" width="171" height="20">Name</lineEdit>
   <lineEdit id="player2" dataSet="players.csv" dataField="2" x="350" y="40" width="171" height="20">Name</lineEdit>
   <spinBox id="p1score" x="245" y="10" width="42" height="24" maximum="10" />
   <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
   <comboBox id="round" width="135" height="20" x="60" y="70" editable="1" >
-  <comboItem selected="true">Winners Round 1</comboItem>
-  <comboItem>Winners Round 2</comboItem>
-  <comboItem>Winner Quarter-Final</comboItem>
-  <comboItem>Winners Semi-Final</comboItem>
-  <comboItem>Winners Final</comboItem>
+  <comboItem selected="true">Pools</comboItem>
+  <comboItem>Quarter-Finals</comboItem>
+  <comboItem>Semi-Finals</comboItem>
   <comboItem>Grand Final</comboItem>
-  <comboItem>Grand Final Reset</comboItem>
-  <comboItem>Losers Round 1</comboItem>
-  <comboItem>Losers Round 2</comboItem>
-  <comboItem>Losers Round 3</comboItem>
-  <comboItem>Losers Round 4</comboItem>
-  <comboItem>Losers Round 5</comboItem>
-  <comboItem>Loser Quarter-Final</comboItem>
-  <comboItem>Losers Semi-Final</comboItem>
-  <comboItem>Losers Final</comboItem>
   </comboBox>
   <spinBox id="bestof" x="245" y="70" width="42" height="24" maximum="10" />
   <button type="reset" x="300" y="70" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
@@ -101,18 +91,17 @@
   <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
   <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
  </tab>
+ 
  <tab name="ID">
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>
   <label x="10" y="44" width="125" height="13">P1 Team [ Do not edit ]</label>
   <label x="10" y="74" width="125" height="13">P1 Country [ Do not edit ]</label>
   <lineEdit id="p1id" x="140" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player1" />
-  <lineEdit id="p1team" x="140" y="40" width="50" height="20" dataSet="players.csv" dataField="3" master="player1" />
   <lineEdit id="p1country" x="140" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player1" />
   <label x="210" y="14" width="125" height="13">Player 2 ID [ Do not edit ]</label>
   <label x="210" y="44" width="125" height="13">P2 Team [ Do not edit ]</label>
   <label x="210" y="74" width="125" height="13">P2 Country [ Do not edit ]</label>
   <lineEdit id="p2id" x="340" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player2" />
-  <lineEdit id="p2team" x="340" y="40" width="50" height="20" dataSet="players.csv" dataField="3" master="player2" />
   <lineEdit id="p2country" x="340" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player2" />
   
  </tab>
