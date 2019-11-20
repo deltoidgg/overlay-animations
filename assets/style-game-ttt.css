@@ -7,19 +7,29 @@
   --yellow: linear-gradient(to right,#eab600,#eab600);
  --green: linear-gradient(to right,#04a9f5,#00f473);
 }
-
+@font-face {
+  font-family: edosz;
+  src: url(../TTT/edosz.ttf);
+}
 .container {
   display: inline-flex;
   position: absolute;  
   }
   
+
+
+
+
+
+
+  
 .shape {
   width: 525px;
-  height: 45px;
+  height: 40px;
   margin: 0px;
   background: linear-gradient(rgba(16,26,36,1),rgba(16,26,36,0.9));
   background: url('../TTT/bg1.png');
-  background-size: 500px 50px;
+  background-size: 500px 40px;
   overflow: hidden;
   position: relative;
   
@@ -39,10 +49,10 @@
   /* box-shadow: 0 8px 8px -10px #000; */
 }
 .subshape {
-  width: 400px;
-  height: 45px;
+  width: 425px;
+  height: 40px;
   margin: 0px;
-  animation-name: namebar;
+  animation-name: namebarsmall;
   animation-duration: 1.5s;  
 }
 
@@ -83,7 +93,7 @@
 }
 .round {
   margin-left: 10px;
-  width: 250px;
+  width: 185px;
   height: 45px;
   position: absolute;
   transform: skew(-35deg);   
@@ -121,7 +131,7 @@
 
 .type {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -173,9 +183,10 @@
   font-size: 20px;    
   font-weight: 700;
   margin-left: 10px;    
+  color: rgba(255, 255, 255, 1); 
 }
 .large {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'edosz', sans-serif;
   font-size: 36px;    
   font-weight: 700;
   width: 60px;
@@ -183,10 +194,11 @@
 }
 
 .team {
-  background: var(--yellow);
+  color: #eab600;
+  /* background: var(--yellow);
   background-clip: padding-box;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; */
   /* font-style: italic; */
   padding-right: 10px;
 }
@@ -270,11 +282,25 @@
   }
   50%   {
     width: 0px;
-    height: 45px;
+    height: 40px;
   }
   100%   {
     width: 525px;
-    height: 45px;
+    height: 40px;
+  }
+}
+@keyframes namebarsmall {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 40px;
+  }
+  100%   {
+    width: 425px;
+    height: 40px;
   }
 }
 @keyframes caster {
@@ -321,11 +347,11 @@
     }
     50%   {
       width: 0px;
-      height: 45px;
+      height: 40px;
     }
     75%, 100%   {
       width: 60px;
-      height: 45px;
+      height: 40px;
     }
   }
 
