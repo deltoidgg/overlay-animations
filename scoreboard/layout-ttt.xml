@@ -7,13 +7,13 @@
   <label x="10" y="45" width="46" height="13">Team 2</label>
   <label x="205" y="75" width="46" height="13">First to</label>
   <label x="10" y="75" width="46" height="13">Round</label>
-  <lineEdit id="p1team" x="60" y="10" width="171" height="20" dataSet="players.csv" dataField="3" master="player1">Name</lineEdit>
+  <lineEdit id="p1team" x="60" y="10" width="171" height="20" dataSet="../TTT/players.csv" dataField="3" master="player1">Name</lineEdit>
 
-  <lineEdit id="p2team" dataSet="players.csv" dataField="3" x="60" y="40" width="171" height="20" master="player2">Name</lineEdit>
+  <lineEdit id="p2team" dataSet="../TTT/players.csv" dataField="3" x="60" y="40" width="171" height="20" master="player2">Name</lineEdit>
   <label x="300" y="15" width="46" height="13">Player 1</label>
   <label x="300" y="45" width="46" height="13">Player 2</label>
-  <lineEdit id="player1" dataSet="players.csv" dataField="2" x="350" y="10" width="171" height="20">Name</lineEdit>
-  <lineEdit id="player2" dataSet="players.csv" dataField="2" x="350" y="40" width="171" height="20">Name</lineEdit>
+  <lineEdit id="player1" dataSet="../TTT/players.csv" dataField="2" x="350" y="10" width="171" height="20">Name</lineEdit>
+  <lineEdit id="player2" dataSet="../TTT/players.csv" dataField="2" x="350" y="40" width="171" height="20">Name</lineEdit>
   <spinBox id="p1score" x="245" y="10" width="42" height="24" maximum="10" />
   <spinBox id="p2score" x="245" y="40" width="42" height="24" maximum="10" />
   <comboBox id="round" width="135" height="20" x="60" y="70" editable="1" >
@@ -30,38 +30,38 @@
   <tab name="Top 8">
 
   <!-- <label x="10" y="15" width="46" height="13" dataSet="players.csv" dataField="2" >Player 1</label> -->
-  <lineEdit id="slot1" dataSet="players.csv" dataField="3" x="10" y="10" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot2" dataSet="players.csv" dataField="3" x="10" y="35" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot1" dataSet="../TTT/players.csv" dataField="3" x="10" y="10" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot2" dataSet="../TTT/players.csv" dataField="3" x="10" y="35" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score1" x="135" y="10" width="42" height="24" maximum="10" />
   <spinBox id="score2" x="135" y="35" width="42" height="24" maximum="10" />
   
-  <lineEdit id="slot3" dataSet="players.csv" dataField="3" x="10" y="80" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot4" dataSet="players.csv" dataField="3" x="10" y="105" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot3" dataSet="../TTT/players.csv" dataField="3" x="10" y="80" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot4" dataSet="../TTT/players.csv" dataField="3" x="10" y="105" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score3" x="135" y="80" width="42" height="24" maximum="10" />
   <spinBox id="score4" x="135" y="105" width="42" height="24" maximum="10" />
 
-  <lineEdit id="slot5" dataSet="players.csv" dataField="3" x="10" y="150" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot6" dataSet="players.csv" dataField="3" x="10" y="175" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot5" dataSet="../TTT/players.csv" dataField="3" x="10" y="150" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot6" dataSet="../TTT/players.csv" dataField="3" x="10" y="175" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score5" x="135" y="150" width="42" height="24" maximum="10" />
   <spinBox id="score6" x="135" y="175" width="42" height="24" maximum="10" />
 
-  <lineEdit id="slot7" dataSet="players.csv" dataField="3" x="10" y="220" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot8" dataSet="players.csv" dataField="3" x="10" y="245" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot7" dataSet="../TTT/players.csv" dataField="3" x="10" y="220" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot8" dataSet="../TTT/players.csv" dataField="3" x="10" y="245" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score7" x="135" y="220" width="42" height="24" maximum="10" />
   <spinBox id="score8" x="135" y="245" width="42" height="24" maximum="10" />
 
-  <lineEdit id="slot9" dataSet="players.csv" dataField="3" x="200" y="50" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot10" dataSet="players.csv" dataField="3" x="200" y="75" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot9" dataSet="../TTT/players.csv" dataField="3" x="200" y="50" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot10" dataSet="../TTT/players.csv" dataField="3" x="200" y="75" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score9" x="325" y="50" width="42" height="24" maximum="10" />
   <spinBox id="score10" x="325" y="75" width="42" height="24" maximum="10" />
 
-  <lineEdit id="slot11" dataSet="players.csv" dataField="3" x="200" y="185" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot12" dataSet="players.csv" dataField="3" x="200" y="210" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot11" dataSet="../TTT/players.csv" dataField="3" x="200" y="185" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot12" dataSet="../TTT/players.csv" dataField="3" x="200" y="210" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score11" x="325" y="185" width="42" height="24" maximum="10" />
   <spinBox id="score12" x="325" y="210" width="42" height="24" maximum="10" />
 
-  <lineEdit id="slot13" dataSet="players.csv" dataField="3" x="390" y="115" width="120" height="20">Don't leave blank</lineEdit>
-  <lineEdit id="slot14" dataSet="players.csv" dataField="3" x="390" y="140" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot13" dataSet="../TTT/players.csv" dataField="3" x="390" y="115" width="120" height="20">Don't leave blank</lineEdit>
+  <lineEdit id="slot14" dataSet="../TTT/players.csv" dataField="3" x="390" y="140" width="120" height="20">Don't leave blank</lineEdit>
   <spinBox id="score13" x="515" y="115" width="42" height="24" maximum="10" />
   <spinBox id="score14" x="515" y="140" width="42" height="24" maximum="10" />
 
@@ -71,16 +71,12 @@
  <tab name="Commentary">
   <label x="10" y="14" width="45" height="13">Caster 1</label>
   <label x="10" y="44" width="45" height="13">Caster 2</label>
-    <label x="10" y="74" width="45" height="13">Caster 3</label>
   <lineEdit id="caster1" x="60" y="10" width="110" height="20" />
   <lineEdit id="caster2" x="60" y="40" width="110" height="20" />
-  <lineEdit id="caster3" x="60" y="70" width="110" height="20" />
   <label x="180" y="14" width="45" height="13">Twitter</label>
   <label x="180" y="44" width="45" height="13">Twitter</label>
-    <label x="180" y="74" width="45" height="13">Twitter</label>
   <lineEdit id="twitter1" x="220" y="10" width="100" height="20"></lineEdit>
   <lineEdit id="twitter2" x="220" y="40" width="100" height="20"></lineEdit>
-  <lineEdit id="twitter3" x="220" y="70" width="100" height="20"></lineEdit>
     <label x="330" y="14" width="45" height="13">←</label>
   <label x="330" y="44" width="45" height="13">←</label>
     <button type="swap" x="345" y="10" width="45" height="53" tooltip="Swap the Casters" id="swap2" swapSet1="caster1,twitter1" swapSet2="caster2,twitter2">Swap</button>
@@ -96,13 +92,13 @@
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>
   <label x="10" y="44" width="125" height="13">P1 Team [ Do not edit ]</label>
   <label x="10" y="74" width="125" height="13">P1 Country [ Do not edit ]</label>
-  <lineEdit id="p1id" x="140" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player1" />
-  <lineEdit id="p1country" x="140" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player1" />
+  <lineEdit id="p1id" x="140" y="10" width="50" height="20" dataSet="../TTT/players.csv" dataField="1" master="player1" />
+  <lineEdit id="p1country" x="140" y="70" width="50" height="20" dataSet="../TTT/players.csv" dataField="4" master="player1" />
   <label x="210" y="14" width="125" height="13">Player 2 ID [ Do not edit ]</label>
   <label x="210" y="44" width="125" height="13">P2 Team [ Do not edit ]</label>
   <label x="210" y="74" width="125" height="13">P2 Country [ Do not edit ]</label>
-  <lineEdit id="p2id" x="340" y="10" width="50" height="20" dataSet="players.csv" dataField="1" master="player2" />
-  <lineEdit id="p2country" x="340" y="70" width="50" height="20" dataSet="players.csv" dataField="4" master="player2" />
+  <lineEdit id="p2id" x="340" y="10" width="50" height="20" dataSet="../TTT/players.csv" dataField="1" master="player2" />
+  <lineEdit id="p2country" x="340" y="70" width="50" height="20" dataSet="../TTT/players.csv" dataField="4" master="player2" />
   
  </tab>
 </layout>

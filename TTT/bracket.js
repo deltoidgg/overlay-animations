@@ -20,7 +20,7 @@ for (i = 0; i <x.length; i++) {
   player1 += x[i].getElementsByTagName("player1")[0].childNodes[0].nodeValue;
   player2 += x[i].getElementsByTagName("player2")[0].childNodes[0].nodeValue;
   p1score += x[i].getElementsByTagName("p1score")[0].childNodes[0].nodeValue;
-  p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
+  p2score += x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
   p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
   p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
   round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
@@ -96,9 +96,9 @@ for (i = 0; i <x.length; i++) {
         break;
         case 3:   
           document.getElementById("p1team").innerHTML = p1team;
-          document.getElementById("p1score").src = p1score;
+          document.getElementById("p1score").innerHTML = p1score;
           document.getElementById("p2team").innerHTML = p2team;
-          document.getElementById("p2score").src = p2score;
+          document.getElementById("p2score").innerHTML = p2score;
             break;
             case 4:
               document.getElementById("round").innerHTML = round;
