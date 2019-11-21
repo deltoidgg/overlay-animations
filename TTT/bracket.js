@@ -13,7 +13,7 @@ function myFunction(xml) {
 var i;
 var xmlDoc = xml.responseXML;
 var slot1="",score1="", slot2="", score2="", slot3="", score3="", slot4="", score4="", slot5="", score5="", slot6="", score6="", slot7="", score7="", slot8="", score8="", slot9="", score9="", slot10="", score10="", slot11="", score11="", slot12="", score12="", slot13="", score13="", slot14="", score14="";
-var player1="", player2="", p1score="", p2score="", p1team="", p2team="", round="", bestof="";
+var player1="", player2="", p1score="", p2score="", p1team="", p2team="", round="", bestof="", caster1="", caster2="";
 // Loop to get data from XML and place in respective variable
 var x = xmlDoc.getElementsByTagName("items");
 for (i = 0; i <x.length; i++) { 
@@ -25,6 +25,8 @@ for (i = 0; i <x.length; i++) {
   p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
   round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
   bestof += x[i].getElementsByTagName("bestof")[0].childNodes[0].nodeValue;
+  caster1 += x[i].getElementsByTagName("caster1")[0].childNodes[0].nodeValue;
+  caster2 += x[i].getElementsByTagName("caster2")[0].childNodes[0].nodeValue;
     slot1 += x[i].getElementsByTagName("slot1")[0].childNodes[0].nodeValue;
     score1 += x[i].getElementsByTagName("score1")[0].childNodes[0].nodeValue;
     slot2 += x[i].getElementsByTagName("slot2")[0].childNodes[0].nodeValue;
@@ -102,5 +104,9 @@ for (i = 0; i <x.length; i++) {
               document.getElementById("round").innerHTML = round;
               document.getElementById("bestof").innerHTML = bestof;
               break;
+              case 5:
+                document.getElementById("caster1").innerHTML = caster1;
+                document.getElementById("caster2").innerHTML = caster2;
+                break;
   }
 }

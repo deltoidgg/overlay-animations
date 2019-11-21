@@ -13,16 +13,69 @@
 }
 .container {
   display: inline-flex;
-  position: absolute;  
+  /* overflow: hidden; */
+  position: absolute;
+  /* height: 210px; */
   }
   
 
+.double {      
+  display: grid;
+  grid-template-columns: 500px 1px 500px;
+}
 
+.doubleL {
+  display: grid;
+  grid-template-rows: 60px 40px;
+  grid-row-gap: 2px;
+  margin-top: 97px;
+  justify-content: end;
+  justify-items: end;
+}  
+.doubleR {
+  display: grid;
+  grid-template-rows: 60px 40px;
+  grid-row-gap: 2px;
+  margin-top: 97px;
+  justify-content: start;
+}
+.title {
+  width: 500px;
+  height: 100px;
+  font-size: 36px;    
+  margin: 0px;
+  background: url('../TTT/bg2.png');
+  background-size: 500px 100px;
+  overflow: hidden;
+  
+  display: block;
+  
+  position: relative;
+  
+  border-style: solid;
+  border-width: 0 10px 0 10px;
+  border-image: var(--black);
+  border-image-slice: 1;
 
-
-
+  animation-name: casterbar;
+  animation-duration: 1.5s;  
+  
+  /* display: inline-flex;
+  justify-content: flex-end; */
 
   
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+}
+
+.egg { 
+  height: 200px;
+  position: absolute;
+  margin-left: -100px;
+  z-index: 1;
+  animation-name: grow;
+  animation-duration: 1.5s;  
+}
+
 .shape {
   width: 525px;
   height: 40px;
@@ -127,6 +180,23 @@
   animation-duration: 3s;  
   /* background: url('../assets/layout/black_textured.png'); */
   position: absolute;
+}
+.ttt-type {
+  font-family: 'edosz', sans-serif;
+  font-size: 48px;    
+  font-weight: 700;
+  width: 60px;
+  color: rgba(255, 255, 255, 1); 
+  text-transform: uppercase;
+
+  display: inline-flex;
+  
+  width: 500px;
+  height: 100%; 
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .type {
@@ -287,6 +357,20 @@
   100%   {
     width: 525px;
     height: 40px;
+  }
+}
+@keyframes casterbar {
+  0%, 25%   {
+    width: 0px;
+    height: 0px;
+  }
+  50%   {
+    width: 0px;
+    height: 100px;
+  }
+  100%   {
+    width: 500px;
+    height: 100px;
   }
 }
 @keyframes namebarsmall {
