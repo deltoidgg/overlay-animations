@@ -12,7 +12,7 @@ xhttp.send();
 function myFunction(xml) {
 var i;
 var xmlDoc = xml.responseXML;
-var player1="", player2="", caster1="", caster2="", caster3="", twitter1="", twitter2="", twitter3="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="";
+var player1="", player2="", caster1="", caster2="", caster3="", twitter1="", twitter2="", twitter3="", p1score="", p2score="", p1team="", p2team="", p1country="", p2country="", round="", bestof="", mText1="", mText2="", mText3="", mScore1="", mScore2="", mScore3="";
 var p=["","","",""];
 
 // Loop to get data from XML and place in respective variable
@@ -30,6 +30,12 @@ for (i = 0; i <x.length; i++) {
   p2score+= x[i].getElementsByTagName("p2score")[0].childNodes[0].nodeValue;
   p1team += x[i].getElementsByTagName("p1team")[0].childNodes[0].nodeValue;
   p2team += x[i].getElementsByTagName("p2team")[0].childNodes[0].nodeValue;
+  mText1 += x[i].getElementsByTagName("mText1")[0].childNodes[0].nodeValue;
+  mText2 += x[i].getElementsByTagName("mText2")[0].childNodes[0].nodeValue;
+  mText3 += x[i].getElementsByTagName("mText3")[0].childNodes[0].nodeValue;
+  mScore1 += x[i].getElementsByTagName("mScore1")[0].childNodes[0].nodeValue;
+  mScore2 += x[i].getElementsByTagName("mScore2")[0].childNodes[0].nodeValue;
+  mScore3 += x[i].getElementsByTagName("mScore3")[0].childNodes[0].nodeValue;
   p1country += x[i].getElementsByTagName("p1country")[0].childNodes[0].nodeValue;
   p2country += x[i].getElementsByTagName("p2country")[0].childNodes[0].nodeValue;
   round += x[i].getElementsByTagName("round")[0].childNodes[0].nodeValue;
@@ -182,5 +188,13 @@ for (i = 0; i <x.length; i++) {
       document.getElementById("p1logo").src = p1logo;
       document.getElementById("p2logo").src = p2logo;
       break;
+      case 9:
+        document.getElementById("mText1").innerHTML = mText1;
+        document.getElementById("mText2").innerHTML = mText2;
+        document.getElementById("mText3").innerHTML = mText3;
+        document.getElementById("mScore1").innerHTML = mScore1;
+        document.getElementById("mScore2").innerHTML = mScore2;
+        document.getElementById("mScore3").innerHTML = mScore3;
+        break;
   }
 }

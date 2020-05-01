@@ -2,7 +2,7 @@
 <settings>
  <altHotkeyHandling>0</altHotkeyHandling>
  <format>1</format>
- <layoutPath>layout-ttt.xml</layoutPath>
+ <layoutPath>layout.xml</layoutPath>
  <outputPath></outputPath>
  <useCDATA>0</useCDATA>
 </settings>

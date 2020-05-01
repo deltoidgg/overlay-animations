@@ -57,8 +57,13 @@
  <tab name="Misc">
   <label x="10" y="14" width="46" height="13">Misc 1</label>
   <label x="10" y="44" width="46" height="13">Misc 2</label>
-  <lineEdit id="mText1" x="60" y="10" width="321" height="20" />
-  <lineEdit id="mText2" x="60" y="40" width="321" height="20" />
+    <label x="10" y="74" width="46" height="13">Misc 3</label>
+  <lineEdit id="mText1" x="60" y="10" width="275" height="20" />
+  <lineEdit id="mText2" x="60" y="40" width="275" height="20" />
+    <lineEdit id="mText3" x="60" y="70" width="275" height="20" />
+      <lineEdit id="mScore1" x="340" y="10" width="35" height="20" />
+  <lineEdit id="mScore2" x="340" y="40" width="35" height="20" />
+    <lineEdit id="mScore3" x="340" y="70" width="35" height="20" />
  </tab>
  <tab name="ID">
   <label x="10" y="14" width="125" height="13">Player 1 ID [ Do not edit ]</label>

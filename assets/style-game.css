@@ -256,6 +256,20 @@
   position: absolute;
   animation: second 20s 0s infinite;
 }
+@font-face {
+  font-family: Kimberley;
+  src: url(../assets/kimberly.ttf);
+}
+.top3 {
+  text-transform: uppercase;
+  font-family: 'Kimberley', sans-serif;
+  font-size: 84px;    
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  padding: 50px;
+  margin: 0;
+}
+
 @keyframes namebar {
   0%, 25%   {
     width: 0px;
