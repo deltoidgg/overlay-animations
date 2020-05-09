@@ -18,8 +18,8 @@
   height: 45px;
   margin: 0px;
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-  /* background: url('../assets/layout/black_textured.png'); */
-  background-size: 500px 50px;
+  background: url('../assets/layout/lockdown_bg.png');
+  background-size: 525px 45px;
   overflow: hidden;
   position: relative;
   
@@ -35,8 +35,18 @@
   justify-content: flex-end;
 
   
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7);
+  /* box-shadow: inset 0px 0px 10px rgba(0,0,0,0.7); */
   /* box-shadow: 0 8px 8px -10px #000; */
+}
+
+.shapeL {
+  background: url('../assets/layout/lockdown_bg.png');
+  background-size: 525px 45px;
+}
+
+.shapeR {
+  background: url('../assets/layout/lockdown_bg_flip.png');
+  background-size: 525px 45px;
 }
 
 .base {
@@ -56,8 +66,8 @@
     width: 300px;
     height: 45px;
     background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-    /* background: url('../assets/layout/black_textured.png'); */
-    background-size: 500px 50px;
+    background: url('../assets/layout/lockdown_plain.png');
+    background-size: 300px 45px;
     
   animation-name: caster;
   animation-duration: 1.5s;    
@@ -66,10 +76,10 @@
   width: 225px;
   height: 35px;
   margin-left: 111px;
-  background: linear-gradient(rgba(255,255,255,1),rgba(255, 242, 242, 0.7));
+  background: linear-gradient(rgba(14, 14, 14, 1),rgba(14, 14, 14, 0.7));
   /* background: var(--silver); */
-  /* background: url('../assets/layout/black_textured.png'); */
-  background-size: 500px 50px;
+  /* background: url('../assets/layout/lockdown_plain.png'); */
+  background-size: 225px 35px;
   
   animation-name: twitter;
   animation-duration: 1.5s;    
@@ -83,6 +93,7 @@
   border-width: 0 10px 0 0;
   animation-name: round;
   animation-duration: 1.5s;  
+  background: url('../assets/layout/lockdown_plain.png');
   clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
 }
 .round-left {    
@@ -98,7 +109,8 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  /* background: url('../assets/layout/black_textured.png'); */
+  background: url('../assets/layout/lockdown_score.png');
+  background-position: center; 
   position: absolute;
 }
 .extensionR {
@@ -108,7 +120,8 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  /* background: url('../assets/layout/black_textured.png'); */
+  background: url('../assets/layout/lockdown_score.png');
+  background-position: center; 
   position: absolute;
 }
 
@@ -130,8 +143,8 @@
   color: rgba(255, 255, 255, 0.8); 
 }
 .name-type {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 32px;
+  font-family: 'Kimberley', sans-serif;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
 
@@ -159,7 +172,7 @@
 
   justify-content: center;
   align-items: center;
-  color: rgb(32, 32, 32); 
+  color: rgba(255, 255, 255, 0.8); 
 }
 
 .small {    
@@ -198,6 +211,8 @@
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
+  background: url('../assets/layout/lockdown_small_bg.png');
+  background-size: 120px 45px;
   box-shadow: inset 0px 0px 10px #000;
 
   line-height:1em;

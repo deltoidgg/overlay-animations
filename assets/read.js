@@ -98,6 +98,18 @@ for (i = 0; i <x.length; i++) {
     case 'Harriers':
       p1logo = "../assets/teams/harriers.png"
       break;
+      case 'SaltyEU':
+        p1logo = "../assets/teams/saltyeu.png"
+        break;
+        case 'UYU':
+          p1logo = "../assets/teams/uyu.png"
+          break;
+          case 'eMg':
+            p1logo = "../assets/teams/emg.png"
+            break;
+            case 'W3D':
+              p1logo = "../assets/teams/w3d.png"
+              break;
     default:
       p1logo = "../assets/teams/default.png";
   }
@@ -130,6 +142,18 @@ for (i = 0; i <x.length; i++) {
     case 'Harriers':
     p2logo = "../assets/teams/harriers.png"
       break;
+      case 'SaltyEU':
+        p2logo = "../assets/teams/saltyeu.png"
+        break;
+        case 'UYU':
+          p2logo = "../assets/teams/uyu.png"
+          break;
+          case 'eMg':
+            p2logo = "../assets/teams/emg.png"
+            break;
+            case 'W3D':
+              p2logo = "../assets/teams/w3d.png"
+              break;
     default:
     p2logo = "../assets/teams/default.png";
   }
@@ -154,7 +178,7 @@ for (i = 0; i <x.length; i++) {
     document.getElementById("caster2").innerHTML = caster2;
     document.getElementById("twitter2").innerHTML = twitter2;
       break;
-      case 8:
+      case 10:
         document.getElementById("caster3").innerHTML = caster3;
         document.getElementById("twitter3").innerHTML = twitter3;
           break;

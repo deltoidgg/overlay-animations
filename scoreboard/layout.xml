@@ -31,6 +31,7 @@
   <comboItem>Loser Quarter-Final</comboItem>
   <comboItem>Losers Semi-Final</comboItem>
   <comboItem>Losers Final</comboItem>
+    <comboItem>Round Robin</comboItem>
   </comboBox>
   <spinBox id="bestof" x="245" y="70" width="42" height="24" maximum="10" />
   <button type="reset" x="300" y="70" width="41" height="23" tooltip="Reset the Scores" id="reset" reset="p1score,p2score">Reset</button>
