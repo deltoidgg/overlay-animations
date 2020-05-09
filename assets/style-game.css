@@ -67,7 +67,7 @@
     height: 45px;
     background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
     background: url('../assets/layout/lockdown_plain.png');
-    background-size: 300px 45px;
+    background-size: 525px 45px;
     
   animation-name: caster;
   animation-duration: 1.5s;    
@@ -78,8 +78,8 @@
   margin-left: 111px;
   background: linear-gradient(rgba(14, 14, 14, 1),rgba(14, 14, 14, 0.7));
   /* background: var(--silver); */
-  /* background: url('../assets/layout/lockdown_plain.png'); */
-  background-size: 225px 35px;
+  background: url('../assets/layout/lockdown_plain.png');
+  background-size: 525px 35px;
   
   animation-name: twitter;
   animation-duration: 1.5s;    
@@ -216,6 +216,11 @@
   box-shadow: inset 0px 0px 10px #000;
 
   line-height:1em;
+}
+
+.logoR {
+  background: url('../assets/layout/lockdown_small_bg_flip.png');
+  background-size: 120px 45px;
 }
 
 .image {  
