@@ -78,8 +78,8 @@
   margin-left: 111px;
   background: linear-gradient(rgba(14, 14, 14, 1),rgba(14, 14, 14, 0.7));
   /* background: var(--silver); */
-  background: url('../assets/layout/lockdown_plain.png');
-  background-size: 525px 35px;
+  /* background: url('../assets/layout/lockdown_plain.png'); */
+  /* background-size: 525px 35px; */
   
   animation-name: twitter;
   animation-duration: 1.5s;    
