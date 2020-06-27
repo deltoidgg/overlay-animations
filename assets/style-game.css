@@ -140,8 +140,13 @@
 
   justify-content: center;
   align-items: center;
+
+
   color: rgba(255, 255, 255, 0.8); 
 }
+
+
+
 .name-type {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 32px;
@@ -157,13 +162,6 @@
   justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 1); 
-  background: linear-gradient(-45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  
-  background-clip: padding-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 .twitter-type {
   font-family: 'PT Sans Narrow', sans-serif;
@@ -183,7 +181,7 @@
 }
 
 .small {    
-  font-size: 20px;    
+  font-size: 20px; 
   font-weight: 700;
   margin-left: 10px;    
 }
@@ -197,14 +195,16 @@
 
 .team {
   /* background: var(--yellow); */
+  padding-right: 10px;
+}
+
+.gradient {
   background: linear-gradient(-45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 20s ease infinite;
   background-clip: padding-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-  font-style: italic;
-  padding-right: 10px;
 }
 
 @keyframes gradient {
