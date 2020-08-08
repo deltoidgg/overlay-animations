@@ -18,7 +18,7 @@
   height: 45px;
   margin: 0px;
   background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-  background: url('../assets/layout/lockdown_bg.png');
+  background: url('../assets/layout/lvlup_bg.png');
   background-size: 525px 45px;
   overflow: hidden;
   position: relative;
@@ -40,12 +40,12 @@
 }
 
 .shapeL {
-  background: url('../assets/layout/lockdown_bg.png');
+  background: url('../assets/layout/lvlup_bg.png');
   background-size: 525px 45px;
 }
 
 .shapeR {
-  background: url('../assets/layout/lockdown_bg_flip.png');
+  background: url('../assets/layout/lvlup_bg_flip.png');
   background-size: 525px 45px;
 }
 
@@ -66,7 +66,7 @@
     width: 300px;
     height: 45px;
     background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,0.7));
-    background: url('../assets/layout/lockdown_plain.png');
+    background: url('../assets/layout/lvlup_bg_plain.png');
     background-size: 525px 45px;
     
   animation-name: caster;
@@ -93,7 +93,8 @@
   border-width: 0 10px 0 0;
   animation-name: round;
   animation-duration: 1.5s;  
-  background: url('../assets/layout/lockdown_plain.png');
+  background: url('../assets/layout/lvlup_bg_plain.png');
+  /* background: linear-gradient(#04070a, #1c262d); */
   clip-path: polygon(10px 0, 45px 45px, 260px 45px, 260px 0);
 }
 .round-left {    
@@ -109,7 +110,8 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  background: url('../assets/layout/lockdown_score.png');
+  background: url('../assets/layout/lvlup_bg_plain.png');
+  /* background: linear-gradient(#1c262d, #04070a); */
   background-position: center; 
   position: absolute;
 }
@@ -120,7 +122,8 @@
   border-image-slice: 1;
   animation-name: extension;
   animation-duration: 3s;  
-  background: url('../assets/layout/lockdown_score.png');
+  background: url('../assets/layout/lvlup_bg_plain.png');
+  /* background: linear-gradient(#1c262d, #04070a); */
   background-position: center; 
   position: absolute;
 }
@@ -232,8 +235,8 @@
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 
-  background: linear-gradient(rgba(72,72,72,1),rgba(35,35,35,1));
-  background: url('../assets/layout/lockdown_small_bg.png');
+  background: linear-gradient(#1c262d, #04070a);
+  background: url('../assets/layout/lvlup_bg_plain.png');
   background-size: 120px 45px;
   box-shadow: inset 0px 0px 10px #000;
 
@@ -241,7 +244,7 @@
 }
 
 .logoR {
-  background: url('../assets/layout/lockdown_small_bg_flip.png');
+  /* background: url('../assets/layout/lockdown_small_bg_flip.png'); */
   background-size: 120px 45px;
 }
 
